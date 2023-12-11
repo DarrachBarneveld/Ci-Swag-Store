@@ -1,0 +1,84 @@
+<div class="container sticky-top">
+  <nav
+    class="navbar navbar-expand-lg navbar-light sticky-nav m-2 p-0 bg-light px-3"
+  >
+    <a class="navbar-brand fw-bolder logo" href="{% url "home" %}">
+      <img src="/media/ciswag.png" alt="code institute swag logo" class="" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link d-flex gap-2 align-items-center"
+            href="#"
+            id="product-options"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <p class="p-0 m-0 text-orange fw-bold">Swag</p>
+            <i class="fa-solid fa-store text-orange"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="product-options">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Another action</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center gap-2" href="#"
+            ><p class="p-0 m-0 fw-bold text-orange">Courses</p>
+            <i class="fa-solid fa-graduation-cap text-orange"></i
+          ></a>
+        </li>
+      </ul>
+      <div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="user-options"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user fa-lg"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="user-options">
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Register</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link" href="{% url "view_cart" %}" aria-expanded="false">
+              <i class="fas fa-shopping-bag fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
