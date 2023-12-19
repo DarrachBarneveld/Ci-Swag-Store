@@ -1,0 +1,49 @@
+{% load cart_tools %}
+
+<tr>
+    <td data-th="Item">
+      <div class="row">
+        <div class="col-md-3 text-left">
+          <img
+            src="https://via.placeholder.com/250x250/5fa9f8/ffffff"
+            alt=""
+            class="img-fluid d-none d-md-block rounded mb-2 shadow"
+          />
+        </div>
+        <div class="col-md-9 text-left mt-sm-2">
+          <h4>{{item.product.name}}</h4>
+          <p class="font-weight-light text-secondary d-none d-sm-block">{{item.product.description}}</p>
+        </div>
+      </div>
+    </td>
+    <td data-th="Price">{{item.product.price}}</td>
+    <td data-th="Quantity">
+
+      {% if item.type == 'product'  %}
+      <input
+      type="number"
+      class="form-control form-control-lg text-center"
+      value="{{item.quantity}}"
+    />
+    {% else %}
+    <strong  class='form-control bg-secondary text-center text-white fw-bold'>{{item.quantity}}</strong>
+      {% endif %}
+
+      <div class="d-flex my-1 justify-content-around">
+        {% if item.type == 'product'  %}
+
+        <button
+          class="btn btn-light btn-sm mb-2 border-secondary"
+        >
+        <i class="fa-solid fa-pen text-primary "></i>
+        </button>
+        {% endif %}
+        <button
+          class="btn btn-light btn-sm mb-2 border-secondary"
+        >
+          <i class="fas fa-trash text-danger"></i>
+        </button>
+      </div>
+    </td>
+    <td data-th="Subtotal">${{ item.product.price | calc_subtotal:item.quantity }}</td>
+  </tr>

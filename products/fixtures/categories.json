@@ -1,0 +1,75 @@
+[
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "name": "clothing",
+      "friendly_name": "Clothing"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "name": "stationary",
+      "friendly_name": "Stationary"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "miscellaneous",
+      "friendly_name": "Miscellaneous"
+    }
+  },
+
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "fullstack",
+      "friendly_name": "Fullstack"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+      "name": "ui_ux_design",
+      "friendly_name": "UI/UX Design"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+      "name": "devops",
+      "friendly_name": "DevOps"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+      "name": "data_science",
+      "friendly_name": "Data Science"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
+      "name": "game_dev",
+      "friendly_name": "Game Development"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.category",
+    "fields": {
+      "name": "mobile_app",
+      "friendly_name": "Mobile App"
+    }
+  }
+]

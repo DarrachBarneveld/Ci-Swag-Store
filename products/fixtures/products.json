@@ -1,0 +1,378 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380693",
+      "name": "Cozy Winter Beanie",
+      "description": "Stay warm and stylish with our cozy winter beanie. Knitted for comfort, it's the perfect accessory for chilly days.",
+      "price": 19.99,
+      "sale": 0,
+      "category": 1,
+      "rating": 3.4,
+      "image_url": "http://example.com/winter_beanie.jpg",
+      "image": "winter_beanie.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380694",
+      "name": "Classic Baseball Cap",
+      "description": "Add a touch of sporty flair with our classic baseball cap. Featuring a timeless design, it's a versatile accessory for casual outings.",
+      "price": 24.99,
+      "sale": 0,
+      "category": 1,
+      "rating": 3.8,
+      "image_url": "http://example.com/baseball_cap.jpg",
+      "image": "baseball_cap.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380695",
+      "name": "Cotton Graphic T-Shirt",
+      "description": "Express your style with our comfortable cotton graphic T-shirt. Featuring unique graphics, it's a must-have for a casual wardrobe.",
+      "price": 17.99,
+      "category": 1,
+      "sale": 0,
+      "rating": 4.5,
+      "image_url": "http://example.com/graphic_tshirt.jpg",
+      "image": "graphic_tshirt.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380696",
+      "name": "Cozy Knit Jumper",
+      "description": "Stay cozy and stylish with our knit jumper. Perfect for chilly days, it adds a touch of warmth to your winter wardrobe.",
+      "price": 39.99,
+      "category": 1,
+      "sale": 20,
+      "rating": 4.0,
+      "image_url": "http://example.com/knit_jumper.jpg",
+      "image": "knit_jumper.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380697",
+      "name": "Classic Denim Jacket",
+      "description": "A versatile denim jacket that adds a touch of casual chic to any outfit. Features button closures and a classic design for everyday wear.",
+      "price": 49.99,
+      "sale": 20,
+      "category": 1,
+      "rating": 4.8,
+      "image_url": "http://example.com/denim_jacket.jpg",
+      "image": "denim_jacket.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380698",
+      "name": "Comfortable Everyday Socks",
+      "description": "Step into comfort with our everyday socks. Designed for all-day wear, these socks keep your feet cozy and stylish.",
+      "price": 9.99,
+      "category": 1,
+      "sale": 0,
+      "rating": 3.4,
+      "image_url": "http://example.com/everyday_socks.jpg",
+      "image": "everyday_socks.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380699",
+      "name": "Cozy Pajama Set",
+      "description": "Unwind in style with our cozy pajama set. Made from soft and breathable fabric, it ensures a restful night's sleep.",
+      "price": 29.99,
+      "category": 1,
+      "sale": 0,
+      "rating": 4.2,
+      "image_url": "http://example.com/pajama_set.jpg",
+      "image": "pajama_set.jpg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380700",
+      "name": "Formal Button-Up Shirt",
+      "description": "Elevate your formal look with our classic button-up shirt. Perfect for office or special occasions, it combines style and sophistication.",
+      "price": 34.99,
+      "sale": 50,
+      "category": 1,
+      "rating": 2.4,
+      "image_url": "http://example.com/button_up_shirt.jpg",
+      "image": "button_up_shirt.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380701",
+      "name": "Sporty Tracksuit",
+      "description": "Embrace an active lifestyle with our sporty tracksuit. Designed for comfort and flexibility, it's ideal for workouts or casual outings.",
+      "price": 54.99,
+      "sale": 20,
+      "category": 1,
+      "rating": 3.9,
+      "image_url": "http://example.com/sporty_tracksuit.jpg",
+      "image": "sporty_tracksuit.jpg"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380702",
+      "name": "Classic Silk Tie",
+      "description": "Complete your formal look with our classic silk tie. Crafted with precision, it adds a touch of sophistication to your ensemble.",
+      "price": 19.99,
+      "sale": 0,
+      "category": 1,
+      "rating": 4.2,
+      "image_url": "http://example.com/silk_tie.jpg",
+      "image": "silk_tie.jpg"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380703",
+      "name": "Professional Ballpoint Pen",
+      "description": "Write with precision using our professional ballpoint pen. Designed for smooth and comfortable writing, it's a must-have for any workspace.",
+      "price": 7.99,
+      "sale": 0,
+      "category": 2,
+      "rating": 3.2,
+      "image_url": "http://example.com/ballpoint_pen.jpg",
+      "image": "ballpoint_pen.jpg"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380704",
+      "name": "Compact Pencil Kit",
+      "description": "Stay organized with our compact pencil kit. Includes a variety of pencils and accessories, perfect for students and professionals alike.",
+      "price": 12.99,
+      "sale": 0,
+      "category": 2,
+      "rating": 4.9,
+      "image_url": "http://example.com/pencil_kit.jpg",
+      "image": "pencil_kit.jpg"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380705",
+      "name": "Elegant Leather Notebook",
+      "description": "Capture your thoughts in style with our elegant leather notebook. The perfect companion for meetings, brainstorming, and creative endeavors.",
+      "price": 18.99,
+      "sale": 0,
+      "category": 2,
+      "rating": 4.8,
+      "image_url": "http://example.com/leather_notebook.jpg",
+      "image": "leather_notebook.jpg"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380706",
+      "name": "Sleek Laptop Case",
+      "description": "Protect your laptop in style with our sleek laptop case. Featuring a modern design and durable materials, it's a must-have for professionals on the go.",
+      "price": 29.99,
+      "sale": 40,
+      "category": 2,
+      "rating": 3.3,
+      "image_url": "http://example.com/laptop_case.jpg",
+      "image": "laptop_case.jpg"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380707",
+      "name": "Wireless Ergonomic Mouse",
+      "description": "Enhance your productivity with our wireless ergonomic mouse. Designed for comfort and precision, it's ideal for long hours of work or study.",
+      "price": 24.99,
+      "sale": 0,
+      "category": 2,
+      "rating": 3.3,
+      "image_url": "http://example.com/ergonomic_mouse.jpg",
+      "image": "ergonomic_mouse.jpg"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380708",
+      "name": "Mechanical Gaming Keyboard",
+      "description": "Elevate your gaming experience with our mechanical gaming keyboard. Responsive keys and customizable features make it a top choice for gamers.",
+      "price": 69.99,
+      "sale": 20,
+      "category": 2,
+      "rating": 2.3,
+      "image_url": "http://example.com/gaming_keyboard.jpg",
+      "image": "gaming_keyboard.jpg"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380709",
+      "name": "Stylish Notepad Set",
+      "description": "Stay organized with our stylish notepad set. Featuring colorful designs and quality paper, it's perfect for jotting down notes and ideas.",
+      "price": 14.99,
+      "sale": 0,
+      "category": 2,
+      "rating": 4.0,
+      "image_url": "http://example.com/notepad_set.jpg",
+      "image": "notepad_set.jpg"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380717",
+      "name": "Large Rollup Mousepad",
+      "description": "Upgrade your workspace with our large rollup mousepad. Provides ample space for smooth mouse movements and adds a touch of style to your desk.",
+      "price": 16.99,
+      "sale": 0,
+      "category": 2,
+      "rating": 5,
+      "image_url": "http://example.com/large_mousepad.jpg",
+      "image": "large_mousepad.jpg"
+    }
+  },
+
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380711",
+      "name": "Artistic Wall Calendar",
+      "description": "Stay organized and inspired with our artistic wall calendar. Each month features unique artwork, adding a touch of creativity to your workspace.",
+      "price": 15.99,
+      "sale": 0,
+      "category": 3,
+      "rating": 4.2,
+      "image_url": "http://example.com/wall_calendar.jpg",
+      "image": "wall_calendar.jpg"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380712",
+      "name": "Insulated Stainless Steel Thermos",
+      "description": "Keep your beverages at the perfect temperature with our insulated stainless steel thermos. Ideal for coffee, tea, or any hot or cold drink on the go.",
+      "price": 19.99,
+      "sale": 0,
+      "category": 3,
+      "rating": 4.1,
+      "image_url": "http://example.com/stainless_steel_thermos.jpg",
+      "image": "stainless_steel_thermos.jpg"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380713",
+      "name": "Blue Light Blocking Glasses",
+      "description": "Protect your eyes from digital strain with our blue light blocking glasses. Stylish and functional, they're a must-have for long hours in front of screens.",
+      "price": 29.99,
+      "sale": 10,
+      "category": 3,
+      "rating": 3.8,
+      "image_url": "http://example.com/blue_light_glasses.jpg",
+      "image": "blue_light_glasses.jpg"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380714",
+      "name": "Stress Relief Ball",
+      "description": "Relieve stress and tension with our stress relief ball. Squeeze away the day's pressures and promote relaxation at home or the office.",
+      "price": 7.99,
+      "sale": 0,
+      "category": 3,
+      "rating": 4.9,
+      "image_url": "http://example.com/stress_ball.jpg",
+      "image": "stress_ball.jpg"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380715",
+      "name": "Pomodoro Technique Alarm Clock",
+      "description": "Boost productivity with our Pomodoro Technique alarm clock. Enhance focus and manage time effectively with this unique time management tool.",
+      "price": 34.99,
+      "sale": 20,
+      "category": 3,
+      "rating": 3.5,
+      "image_url": "http://example.com/pomodoro_clock.jpg",
+      "image": "pomodoro_clock.jpg"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380716",
+      "name": "Memory Foam Neck Pillow",
+      "description": "Experience comfort and support with our memory foam neck pillow. Perfect for travel or relaxation, it provides plush comfort for your neck and shoulders.",
+      "price": 22.99,
+      "sale": 0,
+      "category": 3,
+      "rating": 3.9,
+      "image_url": "http://example.com/neck_pillow.jpg",
+      "image": "neck_pillow.jpg"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380710",
+      "name": "Classic Ceramic Mug",
+      "description": "Sip your favorite beverage in style with our classic ceramic mug. Featuring a timeless design, it's a perfect addition to your desk or kitchen.",
+      "price": 9.99,
+      "sale": 0,
+      "category": 3,
+      "rating": 4.4,
+      "image_url": "http://example.com/ceramic_mug.jpg",
+      "image": "ceramic_mug.jpg"
+    }
+  }
+]

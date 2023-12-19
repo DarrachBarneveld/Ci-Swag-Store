@@ -1,0 +1,866 @@
+[
+  {
+    "pk": 1,
+    "model": "programs.module",
+    "fields": {
+      "program": 26,
+      "title": "Introduction to Arrays",
+      "description": "Get started with the basics of JavaScript arrays."
+    }
+  },
+  {
+    "pk": 2,
+    "model": "programs.module",
+    "fields": {
+      "program": 26,
+      "title": "Advanced Array Manipulation",
+      "description": "Learn advanced techniques for manipulating arrays in JavaScript."
+    }
+  },
+  {
+    "pk": 3,
+    "model": "programs.module",
+    "fields": {
+      "program": 26,
+      "title": "Hands-on Array Exercises",
+      "description": "Apply your knowledge through hands-on exercises and challenges."
+    }
+  },
+  {
+    "pk": 4,
+    "model": "programs.module",
+    "fields": {
+      "program": 27,
+      "title": "Understanding List Comprehension",
+      "description": "Get a solid understanding of list comprehension and its syntax in Python."
+    }
+  },
+  {
+    "pk": 5,
+    "model": "programs.module",
+    "fields": {
+      "program": 27,
+      "title": "Advanced List Comprehension Techniques",
+      "description": "Explore advanced techniques and patterns for using list comprehension effectively in Python."
+    }
+  },
+  {
+    "pk": 6,
+    "model": "programs.module",
+    "fields": {
+      "program": 28,
+      "title": "Introduction to Node.js",
+      "description": "Get started with Node.js and understand its role in backend development."
+    }
+  },
+  {
+    "pk": 7,
+    "model": "programs.module",
+    "fields": {
+      "program": 28,
+      "title": "Building RESTful APIs with Express",
+      "description": "Learn how to build RESTful APIs using the Express framework in Node.js."
+    }
+  },
+  {
+    "pk": 8,
+    "model": "programs.module",
+    "fields": {
+      "program": 28,
+      "title": "Database Integration with MongoDB",
+      "description": "Explore the integration of MongoDB as a database in Node.js applications."
+    }
+  },
+  {
+    "pk": 9,
+    "model": "programs.module",
+    "fields": {
+      "program": 28,
+      "title": "Authentication and Authorization",
+      "description": "Understand the concepts of authentication and authorization in Node.js."
+    }
+  },
+  {
+    "pk": 10,
+    "model": "programs.module",
+    "fields": {
+      "program": 28,
+      "title": "Advanced Topics in Node.js",
+      "description": "Delve into advanced topics and best practices in Node.js backend development."
+    }
+  },
+  {
+    "pk": 11,
+    "model": "programs.module",
+    "fields": {
+      "program": 29,
+      "title": "Introduction to JavaScript Bundlers",
+      "description": "Get an overview of JavaScript bundlers and their role in modern web development."
+    }
+  },
+  {
+    "pk": 12,
+    "model": "programs.module",
+    "fields": {
+      "program": 29,
+      "title": "Webpack Fundamentals",
+      "description": "Dive into the fundamentals of Webpack, a popular JavaScript bundler."
+    }
+  },
+  {
+    "pk": 13,
+    "model": "programs.module",
+    "fields": {
+      "program": 29,
+      "title": "ParcelJS Deep Dive",
+      "description": "Explore the features and usage of ParcelJS as an alternative JavaScript bundler."
+    }
+  },
+  {
+    "pk": 14,
+    "model": "programs.module",
+    "fields": {
+      "program": 29,
+      "title": "Optimizing Project Setup",
+      "description": "Learn techniques for optimizing your project setup and workflow using JavaScript bundlers."
+    }
+  },
+  {
+    "pk": 15,
+    "model": "programs.module",
+    "fields": {
+      "program": 30,
+      "title": "Introduction to Flexbox",
+      "description": "Get started with the basics of Flexbox and understand its role in creating flexible layouts."
+    }
+  },
+  {
+    "pk": 16,
+    "model": "programs.module",
+    "fields": {
+      "program": 30,
+      "title": "Exploring Grid Layouts",
+      "description": "Dive into the world of CSS Grid Layout and learn how to structure complex web layouts."
+    }
+  },
+  {
+    "pk": 17,
+    "model": "programs.module",
+    "fields": {
+      "program": 30,
+      "title": "Responsive Design Techniques",
+      "description": "Master responsive design techniques using Flexbox and Grid Layouts for various screen sizes."
+    }
+  },
+  {
+    "pk": 18,
+    "model": "programs.module",
+    "fields": {
+      "program": 31,
+      "title": "Introduction to Accessibility",
+      "description": "Gain an understanding of the importance of web accessibility and its impact on user experience."
+    }
+  },
+  {
+    "pk": 19,
+    "model": "programs.module",
+    "fields": {
+      "program": 31,
+      "title": "Semantic HTML Fundamentals",
+      "description": "Learn the basics of semantic HTML and how it contributes to creating accessible web content."
+    }
+  },
+  {
+    "pk": 20,
+    "model": "programs.module",
+    "fields": {
+      "program": 31,
+      "title": "Accessible Design Practices",
+      "description": "Explore design practices that enhance accessibility, making your websites inclusive for a diverse audience."
+    }
+  },
+  {
+    "pk": 21,
+    "model": "programs.module",
+    "fields": {
+      "program": 31,
+      "title": "Testing and Implementing Accessibility",
+      "description": "Discover tools and techniques for testing and implementing accessibility features in your web projects."
+    }
+  },
+  {
+    "pk": 22,
+    "model": "programs.module",
+    "fields": {
+      "program": 32,
+      "title": "Understanding User-Centered Design",
+      "description": "Dive into the principles of user-centered design and its role in creating meaningful user experiences."
+    }
+  },
+  {
+    "pk": 23,
+    "model": "programs.module",
+    "fields": {
+      "program": 32,
+      "title": "Visual Hierarchy and Layout",
+      "description": "Explore techniques for establishing visual hierarchy and effective layout in UX/UI design."
+    }
+  },
+  {
+    "pk": 24,
+    "model": "programs.module",
+    "fields": {
+      "program": 32,
+      "title": "Interactive Prototyping",
+      "description": "Learn the art of interactive prototyping to enhance user engagement and refine design concepts."
+    }
+  },
+  {
+    "pk": 25,
+    "model": "programs.module",
+    "fields": {
+      "program": 33,
+      "title": "Introduction to DevOps",
+      "description": "Understand the fundamental principles and benefits of DevOps in modern software development."
+    }
+  },
+  {
+    "pk": 26,
+    "model": "programs.module",
+    "fields": {
+      "program": 33,
+      "title": "Version Control Systems",
+      "description": "Explore version control systems, such as Git, and their role in collaborative development workflows."
+    }
+  },
+  {
+    "pk": 27,
+    "model": "programs.module",
+    "fields": {
+      "program": 33,
+      "title": "Continuous Integration (CI)",
+      "description": "Learn about continuous integration practices and tools for automating the build and test phases of development."
+    }
+  },
+  {
+    "pk": 28,
+    "model": "programs.module",
+    "fields": {
+      "program": 33,
+      "title": "Continuous Deployment (CD)",
+      "description": "Delve into continuous deployment strategies to automate the release and deployment of software changes."
+    }
+  },
+  {
+    "pk": 29,
+    "model": "programs.module",
+    "fields": {
+      "program": 33,
+      "title": "Infrastructure as Code (IaC)",
+      "description": "Explore the concept of Infrastructure as Code and its role in automating infrastructure management."
+    }
+  },
+  {
+    "pk": 30,
+    "model": "programs.module",
+    "fields": {
+      "program": 33,
+      "title": "Monitoring and Logging",
+      "description": "Understand the importance of monitoring and logging in DevOps practices for identifying and resolving issues."
+    }
+  },
+  {
+    "pk": 31,
+    "model": "programs.module",
+    "fields": {
+      "program": 34,
+      "title": "Introduction to Cloud Computing",
+      "description": "Gain an overview of cloud computing, its benefits, and key concepts in cloud service models."
+    }
+  },
+  {
+    "pk": 32,
+    "model": "programs.module",
+    "fields": {
+      "program": 34,
+      "title": "Cloud Service Models",
+      "description": "Explore various cloud service models, including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS)."
+    }
+  },
+  {
+    "pk": 33,
+    "model": "programs.module",
+    "fields": {
+      "program": 34,
+      "title": "Cloud Deployment Models",
+      "description": "Understand different cloud deployment models, such as public cloud, private cloud, and hybrid cloud, and their use cases."
+    }
+  },
+  {
+    "pk": 34,
+    "model": "programs.module",
+    "fields": {
+      "program": 34,
+      "title": "Scalability and Elasticity",
+      "description": "Learn about scalability and elasticity in cloud computing and how these concepts enable dynamic resource allocation."
+    }
+  },
+  {
+    "pk": 35,
+    "model": "programs.module",
+    "fields": {
+      "program": 34,
+      "title": "Security and Compliance in the Cloud",
+      "description": "Explore security measures and compliance considerations when working with cloud services."
+    }
+  },
+  {
+    "pk": 36,
+    "model": "programs.module",
+    "fields": {
+      "program": 34,
+      "title": "Cloud Storage Solutions",
+      "description": "Dive into various cloud storage solutions and their use in storing and retrieving data in the cloud."
+    }
+  },
+  {
+    "pk": 37,
+    "model": "programs.module",
+    "fields": {
+      "program": 34,
+      "title": "Networking in the Cloud",
+      "description": "Understand cloud networking concepts, including virtual networks, subnets, and communication between cloud resources."
+    }
+  },
+  {
+    "pk": 38,
+    "model": "programs.module",
+    "fields": {
+      "program": 34,
+      "title": "Serverless Computing",
+      "description": "Explore serverless computing and its benefits in building applications without managing underlying infrastructure."
+    }
+  },
+  {
+    "pk": 39,
+    "model": "programs.module",
+    "fields": {
+      "program": 34,
+      "title": "Cost Management and Optimization",
+      "description": "Learn strategies for cost management and optimization in cloud computing environments."
+    }
+  },
+  {
+    "pk": 40,
+    "model": "programs.module",
+    "fields": {
+      "program": 34,
+      "title": "Introduction to Continuous Delivery",
+      "description": "Gain an understanding of the principles and benefits of continuous delivery in software development."
+    }
+  },
+  {
+    "pk": 41,
+    "model": "programs.module",
+    "fields": {
+      "program": 34,
+      "title": "Best Practices in Continuous Delivery",
+      "description": "Explore industry best practices for implementing continuous delivery, including automation, testing, and deployment strategies."
+    }
+  },
+  {
+    "pk": 42,
+    "model": "programs.module",
+    "fields": {
+      "program": 35,
+      "title": "Introduction to Machine Learning",
+      "description": "Explore the basic concepts and applications of machine learning, understanding its role in solving real-world problems."
+    }
+  },
+  {
+    "pk": 43,
+    "model": "programs.module",
+    "fields": {
+      "program": 35,
+      "title": "Foundational Algorithms in Machine Learning",
+      "description": "Dive into essential algorithms that form the foundation of machine learning, with practical examples and use cases."
+    }
+  },
+  {
+    "pk": 44,
+    "model": "programs.module",
+    "fields": {
+      "program": 36,
+      "title": "Introduction to Data Visualization",
+      "description": "Get started with the basics of data visualization, understanding its importance in conveying complex information through visuals."
+    }
+  },
+  {
+    "pk": 45,
+    "model": "programs.module",
+    "fields": {
+      "program": 36,
+      "title": "Choosing the Right Charts",
+      "description": "Learn how to select the most suitable charts for different types of data, ensuring effective communication of insights."
+    }
+  },
+  {
+    "pk": 46,
+    "model": "programs.module",
+    "fields": {
+      "program": 36,
+      "title": "Advanced Visualization Techniques",
+      "description": "Explore advanced data visualization techniques, including interactive visualizations and storytelling with data."
+    }
+  },
+  {
+    "pk": 47,
+    "model": "programs.module",
+    "fields": {
+      "program": 37,
+      "title": "Introduction to Data Structures",
+      "description": "Get acquainted with the fundamental concepts of data structures and their importance in algorithmic problem-solving."
+    }
+  },
+  {
+    "pk": 48,
+    "model": "programs.module",
+    "fields": {
+      "program": 37,
+      "title": "Arrays and Linked Lists",
+      "description": "Explore basic data structures such as arrays and linked lists, understanding their properties and use cases."
+    }
+  },
+  {
+    "pk": 49,
+    "model": "programs.module",
+    "fields": {
+      "program": 37,
+      "title": "Stacks and Queues",
+      "description": "Dive into the concepts of stacks and queues, and learn how they play a crucial role in managing data."
+    }
+  },
+  {
+    "pk": 50,
+    "model": "programs.module",
+    "fields": {
+      "program": 37,
+      "title": "Trees and Graphs",
+      "description": "Understand hierarchical data structures like trees and graphs, exploring their applications and traversal algorithms."
+    }
+  },
+  {
+    "pk": 51,
+    "model": "programs.module",
+    "fields": {
+      "program": 37,
+      "title": "Sorting and Searching",
+      "description": "Learn essential algorithms for sorting and searching data, crucial for optimizing the efficiency of programs."
+    }
+  },
+  {
+    "pk": 52,
+    "model": "programs.module",
+    "fields": {
+      "program": 37,
+      "title": "Advanced Data Structures",
+      "description": "Explore advanced data structures, including hash tables and dynamic programming, to solve complex computational problems."
+    }
+  },
+  {
+    "pk": 53,
+    "model": "programs.module",
+    "fields": {
+      "program": 38,
+      "title": "Introduction to R Programming",
+      "description": "Start your journey into R programming by understanding its basics, syntax, and the importance of statistical computing."
+    }
+  },
+  {
+    "pk": 54,
+    "model": "programs.module",
+    "fields": {
+      "program": 38,
+      "title": "Data Types and Variables",
+      "description": "Learn about different data types in R, how to declare variables, and the role they play in data manipulation."
+    }
+  },
+  {
+    "pk": 55,
+    "model": "programs.module",
+    "fields": {
+      "program": 38,
+      "title": "Control Structures and Functions",
+      "description": "Explore control structures and functions in R, crucial for writing efficient and readable code in data analysis tasks."
+    }
+  },
+  {
+    "pk": 56,
+    "model": "programs.module",
+    "fields": {
+      "program": 38,
+      "title": "Data Visualization with ggplot2",
+      "description": "Dive into the world of data visualization using the ggplot2 package in R, creating compelling and insightful visualizations."
+    }
+  },
+  {
+    "pk": 57,
+    "model": "programs.module",
+    "fields": {
+      "program": 39,
+      "title": "Introduction to JavaScript Libraries",
+      "description": "Get started with an overview of popular JavaScript libraries and understand their significance in web development."
+    }
+  },
+  {
+    "pk": 58,
+    "model": "programs.module",
+    "fields": {
+      "program": 39,
+      "title": "Deep Dive into React.js",
+      "description": "Explore the React.js library, learning about components, state, props, and the fundamentals of building React applications."
+    }
+  },
+  {
+    "pk": 59,
+    "model": "programs.module",
+    "fields": {
+      "program": 39,
+      "title": "Vue.js Essentials",
+      "description": "Master the essentials of Vue.js, a progressive JavaScript framework, covering components, directives, and state management."
+    }
+  },
+  {
+    "pk": 60,
+    "model": "programs.module",
+    "fields": {
+      "program": 39,
+      "title": "Angular Fundamentals",
+      "description": "Dive into Angular, exploring its architecture, components, services, and how to build robust web applications using this powerful framework."
+    }
+  },
+  {
+    "pk": 61,
+    "model": "programs.module",
+    "fields": {
+      "program": 39,
+      "title": "Building Interactive UIs with D3.js",
+      "description": "Learn to create interactive and dynamic data visualizations on the web using the D3.js library."
+    }
+  },
+  {
+    "pk": 62,
+    "model": "programs.module",
+    "fields": {
+      "program": 39,
+      "title": "State Management in JavaScript Applications",
+      "description": "Explore different state management patterns and tools for JavaScript applications, ensuring efficient data flow and user interactions."
+    }
+  },
+  {
+    "pk": 63,
+    "model": "programs.module",
+    "fields": {
+      "program": 39,
+      "title": "Optimizing Performance with Lighthouse",
+      "description": "Learn how to optimize the performance of your JavaScript applications using Lighthouse and other performance testing tools."
+    }
+  },
+  {
+    "pk": 64,
+    "model": "programs.module",
+    "fields": {
+      "program": 39,
+      "title": "Testing JavaScript Libraries",
+      "description": "Understand the importance of testing in JavaScript development and explore various testing strategies for libraries and applications."
+    }
+  },
+  {
+    "pk": 65,
+    "model": "programs.module",
+    "fields": {
+      "program": 39,
+      "title": "Security Best Practices for JavaScript Libraries",
+      "description": "Explore security best practices when working with JavaScript libraries to ensure the safety and integrity of your web applications."
+    }
+  },
+  {
+    "pk": 66,
+    "model": "programs.module",
+    "fields": {
+      "program": 39,
+      "title": "Building Progressive Web Apps (PWAs)",
+      "description": "Learn to build Progressive Web Apps (PWAs) using JavaScript libraries, providing a seamless and engaging user experience."
+    }
+  },
+  {
+    "pk": 67,
+    "model": "programs.module",
+    "fields": {
+      "program": 39,
+      "title": "Advanced Topics in JavaScript Libraries",
+      "description": "Delve into advanced topics and techniques in JavaScript libraries, expanding your knowledge and skills in web development."
+    }
+  },
+  {
+    "pk": 68,
+    "model": "programs.module",
+    "fields": {
+      "program": 40,
+      "title": "Introduction to Game Development with Phaser and Kamboom.js",
+      "description": "Get started with an introduction to game development, exploring the basics of Phaser and Kamboom.js and their role in creating captivating games."
+    }
+  },
+  {
+    "pk": 69,
+    "model": "programs.module",
+    "fields": {
+      "program": 40,
+      "title": "Building Game Worlds and Scenes",
+      "description": "Learn the fundamentals of creating game worlds and scenes using Phaser and Kamboom.js, designing environments for your games."
+    }
+  },
+  {
+    "pk": 70,
+    "model": "programs.module",
+    "fields": {
+      "program": 40,
+      "title": "Character Design and Animation",
+      "description": "Explore character design and animation techniques for game development, adding life and movement to your game characters."
+    }
+  },
+  {
+    "pk": 71,
+    "model": "programs.module",
+    "fields": {
+      "program": 40,
+      "title": "User Interaction and Controls",
+      "description": "Understand user interaction and control mechanisms in game development, implementing responsive controls for a seamless gaming experience."
+    }
+  },
+  {
+    "pk": 72,
+    "model": "programs.module",
+    "fields": {
+      "program": 40,
+      "title": "Optimizing Game Performance",
+      "description": "Learn strategies for optimizing game performance, ensuring smooth gameplay and addressing performance challenges in Phaser and Kamboom.js development."
+    }
+  },
+  {
+    "pk": 73,
+    "model": "programs.module",
+    "fields": {
+      "program": 41,
+      "title": "Introduction to Unity Game Development",
+      "description": "Get started with an introduction to Unity, exploring the basics of the Unity game engine and its capabilities for game development."
+    }
+  },
+  {
+    "pk": 74,
+    "model": "programs.module",
+    "fields": {
+      "program": 41,
+      "title": "Building Your First Unity Game",
+      "description": "Learn the essentials of building a Unity game from scratch, covering the initial setup, game design, and basic mechanics."
+    }
+  },
+  {
+    "pk": 75,
+    "model": "programs.module",
+    "fields": {
+      "program": 41,
+      "title": "Advanced Unity Game Design",
+      "description": "Explore advanced Unity game design concepts, including complex mechanics, interactive elements, and engaging gameplay experiences."
+    }
+  },
+  {
+    "pk": 76,
+    "model": "programs.module",
+    "fields": {
+      "program": 41,
+      "title": "3D Game Development in Unity",
+      "description": "Dive into the world of 3D game development using Unity, covering modeling, texturing, and implementing 3D environments."
+    }
+  },
+  {
+    "pk": 77,
+    "model": "programs.module",
+    "fields": {
+      "program": 41,
+      "title": "Unity Physics and Animation",
+      "description": "Understand Unity's physics engine and animation tools, adding realistic movement and dynamics to your Unity games."
+    }
+  },
+  {
+    "pk": 78,
+    "model": "programs.module",
+    "fields": {
+      "program": 41,
+      "title": "Optimizing Unity Games for Performance",
+      "description": "Learn strategies for optimizing Unity games to ensure smooth performance across various platforms and devices."
+    }
+  },
+  {
+    "pk": 79,
+    "model": "programs.module",
+    "fields": {
+      "program": 42,
+      "title": "Introduction to Blender",
+      "description": "Start your journey with Blender by exploring the basics, user interface, and essential tools for 3D modeling."
+    }
+  },
+  {
+    "pk": 80,
+    "model": "programs.module",
+    "fields": {
+      "program": 42,
+      "title": "Modeling Techniques in Blender",
+      "description": "Master various 3D modeling techniques in Blender, including extrusion, sculpting, and mesh manipulation for creating diverse assets."
+    }
+  },
+  {
+    "pk": 81,
+    "model": "programs.module",
+    "fields": {
+      "program": 42,
+      "title": "Texturing and UV Mapping",
+      "description": "Learn the art of texturing and UV mapping in Blender, adding realistic surfaces and details to your 3D models."
+    }
+  },
+  {
+    "pk": 82,
+    "model": "programs.module",
+    "fields": {
+      "program": 42,
+      "title": "Animating with Blender",
+      "description": "Delve into the animation capabilities of Blender, covering keyframe animation, rigging, and creating dynamic sequences."
+    }
+  },
+  {
+    "pk": 83,
+    "model": "programs.module",
+    "fields": {
+      "program": 42,
+      "title": "Advanced Blender Techniques",
+      "description": "Explore advanced techniques in Blender, such as particle systems, lighting, and rendering, to enhance the quality of your 3D models."
+    }
+  },
+  {
+    "pk": 84,
+    "model": "programs.module",
+    "fields": {
+      "program": 43,
+      "title": "Introduction to React Native",
+      "description": "Begin your journey into mobile app development with an overview of React Native, its architecture, and the advantages it offers."
+    }
+  },
+  {
+    "pk": 85,
+    "model": "programs.module",
+    "fields": {
+      "program": 43,
+      "title": "Building User Interfaces with React Native",
+      "description": "Learn how to design and create user interfaces in React Native, exploring components, layouts, and styling for cross-platform compatibility."
+    }
+  },
+  {
+    "pk": 86,
+    "model": "programs.module",
+    "fields": {
+      "program": 43,
+      "title": "Navigating and Accessing Device Features",
+      "description": "Explore navigation patterns and access device features in React Native, enabling you to build interactive and feature-rich mobile applications."
+    }
+  },
+  {
+    "pk": 87,
+    "model": "programs.module",
+    "fields": {
+      "program": 44,
+      "title": "Introduction to Flutter",
+      "description": "Kickstart your journey into mobile app development with Flutter, Google's UI toolkit, and understand its key features and benefits."
+    }
+  },
+  {
+    "pk": 88,
+    "model": "programs.module",
+    "fields": {
+      "program": 44,
+      "title": "Building User Interfaces with Flutter",
+      "description": "Master the art of designing user interfaces in Flutter, exploring widgets, layouts, and responsive design principles for mobile apps."
+    }
+  },
+  {
+    "pk": 89,
+    "model": "programs.module",
+    "fields": {
+      "program": 44,
+      "title": "Integrating Google Services",
+      "description": "Explore the seamless integration of Flutter with various Google services, enhancing your app's functionality and user experience."
+    }
+  },
+  {
+    "pk": 90,
+    "model": "programs.module",
+    "fields": {
+      "program": 44,
+      "title": "Advanced Flutter Development",
+      "description": "Take your Flutter skills to the next level with advanced development techniques, state management, and optimizing app performance."
+    }
+  },
+  {
+    "pk": 91,
+    "model": "programs.module",
+    "fields": {
+      "program": 45,
+      "title": "Introduction to Swift Programming",
+      "description": "Start your iOS app development journey by mastering the fundamentals of Swift programming, Apple's powerful and expressive programming language."
+    }
+  },
+  {
+    "pk": 92,
+    "model": "programs.module",
+    "fields": {
+      "program": 45,
+      "title": "UIKit and User Interface Design",
+      "description": "Delve into UIKit, Apple's framework for building user interfaces, and learn essential concepts for designing visually appealing and responsive iOS apps."
+    }
+  },
+  {
+    "pk": 93,
+    "model": "programs.module",
+    "fields": {
+      "program": 46,
+      "title": "Introduction to iOS App Development",
+      "description": "Kickstart your journey as an Apple Developer by learning the essentials of iOS app development, including Swift programming and UIKit."
+    }
+  },
+  {
+    "pk": 94,
+    "model": "programs.module",
+    "fields": {
+      "program": 46,
+      "title": "Mastering macOS App Development",
+      "description": "Explore the world of macOS app development, covering key concepts and tools to create powerful and seamless applications for Apple's desktop platform."
+    }
+  },
+  {
+    "pk": 95,
+    "model": "programs.module",
+    "fields": {
+      "program": 46,
+      "title": "Building Apps for watchOS",
+      "description": "Dive into the development of apps for watchOS, unlocking the potential of Apple Watch and creating engaging experiences for users."
+    }
+  },
+  {
+    "pk": 96,
+    "model": "programs.module",
+    "fields": {
+      "program": 46,
+      "title": "Advanced Topics in Apple Development",
+      "description": "Take your Apple development skills to the next level with advanced topics, tips, and best practices for building exceptional apps across iOS, macOS, and watchOS."
+    }
+  }
+]

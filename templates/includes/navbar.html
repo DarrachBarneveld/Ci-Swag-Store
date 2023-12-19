@@ -1,4 +1,4 @@
-<div class="container sticky-top">
+{% comment %} <div class="container sticky-top">
   <nav
     class="navbar navbar-expand-lg navbar-light sticky-nav m-2 p-0 bg-light px-3"
   >
@@ -31,28 +31,57 @@
             <i class="fa-solid fa-store text-orange"></i>
           </a>
           <ul class="dropdown-menu" aria-labelledby="product-options">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li>
-              <a class="dropdown-item" href="#">Another action</a>
-            </li>
+            <li><a class="dropdown-item" href="#">All</a></li>
             <li><hr class="dropdown-divider" /></li>
             <li>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Clothing</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Stationary</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Miscellaneous</a>
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2" href="#"
-            ><p class="p-0 m-0 fw-bold text-orange">Courses</p>
-            <i class="fa-solid fa-graduation-cap text-orange"></i
-          ></a>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link d-flex gap-2 align-items-center"
+            href="#"
+            id="course-options"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <p class="p-0 m-0 text-orange fw-bold">Courses</p>
+            <i class="fa-solid fa-graduation-cap text-orange"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="course-options">
+            <li><a class="dropdown-item" href="#">All</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">Full-Stack</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">UI/UX Design</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">DevOps</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Data Science</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Data Science</a>
+            </li>
+          </ul>
         </li>
       </ul>
       <div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a
-              class="nav-link"
+              class="nav-link dropdown-toggle"
               href="#"
               id="user-options"
               role="button"
@@ -79,6 +108,104 @@
           </li>
         </ul>
       </div>
+    </div>
+  </nav>
+</div> {% endcomment %}
+
+<div class="container sticky-top">
+  <nav
+    class="navbar navbar-expand-lg navbar-light sticky-nav m-2 p-0 bg-light px-3 d-flex justify-content-between"
+  >
+    <div class="d-flex justify-content-center align-items-center">
+      <a class="navbar-brand fw-bolder logo" href="{% url "home" %}">
+        <img src="/media/ciswag.png" alt="code institute swag logo" class="" />
+      </a>
+      <div class="dropdown">
+        <a
+          class="nav-link d-flex gap-2 align-items-center"
+          href="#"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <p class="p-0 m-0 text-orange fw-bold">Swag</p>
+          <i class="fa-solid fa-store text-orange"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="product-options">
+          <li><a class="dropdown-item" href="{% url 'products' %}">All</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="{% url 'products' %}?category=clothing">Clothing</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'products' %}?category=stationary">Stationary</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'products' %}?category=miscellaneous">Miscellaneous</a>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <a
+          class="nav-link d-flex gap-2 align-items-center"
+          href="#"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <p class="p-0 m-0 text-orange fw-bold">Courses</p>
+          <i class="fa-solid fa-graduation-cap text-orange"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="course-options">
+          <li><a class="dropdown-item" href="{% url 'programs' %}">All</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="{% url 'programs' %}?category=fullstack">Full-Stack</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'programs' %}?category=ui_ux_design">UI/UX Design</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'programs' %}?category=devops">DevOps</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'programs' %}?category=data_science">Data Science</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'programs' %}?category=game_dev">Game Dev</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href='{% url 'programs' %}?category=mobile_app'>Mobile App</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="dropdown">
+        <a
+          class="nav-link d-flex gap-2 align-items-center"
+          href="#"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-user text-secondary fa-lg"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="user-options">
+          <li><a class="dropdown-item" href="">Management</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="">Login</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="">Register</a>
+          </li>
+        </ul>
+      </div>
+      <a class="nav-link text-secondary" href="{% url "view_cart" %}" aria-expanded="false">
+        <i class="fas fa-shopping-bag fa-lg"></i>
+      </a>
     </div>
   </nav>
 </div>

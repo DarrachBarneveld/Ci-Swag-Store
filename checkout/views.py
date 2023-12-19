@@ -2,5 +2,10 @@ from django.shortcuts import render
 
 # Create your views here.
 def checkout(request):
-    
-    return render(request, 'checkout/checkout.html', )
+    template = 'checkout/checkout.html'
+
+    context = {
+
+    }
+
+    return render(request, template, context)

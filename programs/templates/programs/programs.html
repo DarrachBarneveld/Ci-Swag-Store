@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'programs/css/programs.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<header class="bg-dark">
+    <div class="container px-4 px-lg-5 my-5">
+      <div class="text-center text-white">
+        <h1 class="display-4 fw-bolder">Expand your knowledge</h1>
+        <p class="lead fw-normal text-white-50 mb-0">
+            Elevate your expertise with our curated courses.
+        </p>
+      </div>
+    </div>
+</header>  
+
+{% endblock %}
+
+{% block content %}
+    <!-- Section-->
+    <section class="py-3 bg-white">
+        <div class="container px-4 px-lg-5 mt-5">
+          <div
+            class="row gx-2 gy-2 row-cols-lg-2 justify-content-center"
+          >
+
+          {% for program in programs  %}
+
+          {% include "includes/program_card.html" with program=program %}
+
+          {% endfor %}
+     
+          </div>
+        </div>
+      </section>
+{% endblock %}

@@ -34,6 +34,10 @@ body {
   background: var(--primary-orange);
 }
 
+.border-grey {
+  border: 1px solid rgb(170, 170, 170);
+}
+
 .logo {
   position: relative;
   display: flex;
@@ -86,8 +90,9 @@ body {
 }
 
 .avatar-lg {
-  height: 5rem;
-  width: 5rem;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 0.5rem;
 }
 
 .avatar-title {
@@ -156,4 +161,23 @@ a {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
+}
+
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+  position: fixed;
+  top: 100px;
+  right: 15px;
+  z-index: 99999999999;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.custom-toast {
+  overflow: visible;
+}
+
+.toast-capper {
+  height: 2px;
 }

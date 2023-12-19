@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
 {% block page_header %}
 <header class="bg-dark">
     <div class="container px-4 px-lg-5 my-5">
@@ -22,14 +26,13 @@
           <div
             class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
           >
-          {% include "includes/product_card.html" %}
-          {% include "includes/product_card.html" %}
-          {% include "includes/product_card.html" %}
-          {% include "includes/product_card.html" %}
-          {% include "includes/product_card.html" %}
-          {% include "includes/product_card.html" %}
-          {% include "includes/product_card.html" %}
-          {% include "includes/product_card.html" %}
+
+          {% for product in products  %}
+
+          {% include "includes/product_card.html" with product=product %}
+
+          {% endfor %}
+     
           </div>
         </div>
       </section>

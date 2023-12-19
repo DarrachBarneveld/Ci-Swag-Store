@@ -1,0 +1,83 @@
+<div class="container sticky-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-light sticky-nav m-2 p-0 bg-light px-3"
+    >
+      <a class="navbar-brand fw-bolder logo" href="{% url "home" %}">
+        <img src="/media/ciswag.png" alt="code institute swag logo" class="" />
+      </a>
+      <div class="dropdown">
+        <a class="nav-link d-flex gap-2 align-items-center" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          <p class="p-0 m-0 text-orange fw-bold">Swag</p>
+          <i class="fa-solid fa-store text-orange"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="product-options">
+          <li><a class="dropdown-item" href="{% url 'products' %}">All</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="{% url 'products' %}?category=clothing">Clothing</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'products' %}?category=stationary">Stationary</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'products' %}?category=miscellaneous">Miscellaneous</a>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <a class="nav-link d-flex gap-2 align-items-center" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          <p class="p-0 m-0 text-orange fw-bold">Courses</p>
+          <i class="fa-solid fa-graduation-cap text-orange"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="course-options">
+          <li><a class="dropdown-item" href="{% url 'programs' %}">All</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="{% url 'programs' %}?category=fullstack">Full-Stack</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'programs' %}?category=ui_ux_design">UI/UX Design</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'programs' %}?category=devops">DevOps</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'programs' %}?category=data_science">Data Science</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'programs' %}?category=game_dev">Game Dev</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{% url 'programs' %}?category=mobile_app">Mobile App</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    </nav>
+  </div>
+  
+  <!-- 
+  <div class="d-flex gap-2">
+    <div class="dropdown">
+      <a class="nav-link d-flex gap-2 align-items-center text-secondary" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-user fa-lg"></i>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="user-options">
+        <li><a class="dropdown-item" href="#">Login</a></li>
+        <li>
+          <a class="dropdown-item" href="#">Register</a>
+        </li>
+        <li><hr class="dropdown-divider" /></li>
+        <li>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </li>
+      </ul>
+  
+        <a class="nav-link text-secondary" href="{% url "view_cart" %}" aria-expanded="false">
+          <i class="fas fa-shopping-bag fa-lg"></i>
+        </a>
+      </div>
+    </div> -->
+  
+<!-- 
+    {% comment %} <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> {% endcomment %} -->

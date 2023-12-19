@@ -1,0 +1,376 @@
+[
+  {
+    "pk": 26,
+    "model": "programs.program",
+    "fields": {
+      "category": 4,
+      "sku": "cc5482X9L0A",
+      "name": "JavaScript Array Methods Mastery",
+      "description": "Master the powerful array methods in JavaScript with this hands-on course. Boost your coding skills!",
+      "price": 29.99,
+      "sale": 0,
+      "rating": 4.5,
+      "difficulty": 1,
+      "length": "0:60:00",
+      "image_url": "http://example.com/js_array_methods.jpg",
+      "image": "js_array_methods.jpg"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "programs.program",
+    "fields": {
+      "category": 4,
+      "sku": "cc72B4xP8cD",
+      "name": "Python List Comprehension Unleashed",
+      "description": "Unlock the full potential of Python with advanced list comprehension techniques. Take your Python skills to the next level!",
+      "price": 19.99,
+      "sale": 0,
+      "rating": 4.8,
+      "difficulty": 2,
+      "length": "0:45:00",
+      "image_url": "http://example.com/python_list_comprehension.jpg",
+      "image": "python_list_comprehension.jpg"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "programs.program",
+    "fields": {
+      "category": 4,
+      "sku": "cc3aV1wR6zF",
+      "name": "Node.js Backend Development Masterclass",
+      "description": "Dive deep into Node.js backend development with our comprehensive masterclass. Build scalable and efficient backend solutions!",
+      "price": 64.99,
+      "sale": 10,
+      "rating": 4.6,
+      "difficulty": 2,
+      "length": "4:00:00",
+      "image_url": "http://example.com/nodejs_backend.jpg",
+      "image": "nodejs_backend.jpg"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "programs.program",
+    "fields": {
+      "category": 4,
+      "sku": "cc6Kl0eQ7T2",
+      "name": "JavaScript Bundlers Demystified",
+      "description": "Demystify the world of JavaScript bundlers and streamline your development workflow. Enhance your project setup!",
+      "price": 49.99,
+      "sale": 0,
+      "rating": 4.3,
+      "difficulty": 3,
+      "length": "3:10:00",
+      "image_url": "http://example.com/js_bundlers.jpg",
+      "image": "js_bundlers.jpg"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "programs.program",
+    "fields": {
+      "category": 5,
+      "sku": "cc5Gh9sJ2rP",
+      "name": "Mastering Flexbox and Grid Layouts",
+      "description": "Unlock the power of Flexbox and Grid Layouts in CSS. Learn to create responsive and dynamic web layouts effortlessly!",
+      "price": 29.99,
+      "sale": 0,
+      "rating": 4.7,
+      "difficulty": 1,
+      "length": "1:35:00",
+      "image_url": "http://example.com/flexbox_grid.jpg",
+      "image": "flexbox_grid.jpg"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "programs.program",
+    "fields": {
+      "category": 5,
+      "sku": "cc4Vn6dC8Bx",
+      "name": "Semantic Accessibility for Web Developers",
+      "description": "Enhance your web projects with semantic HTML and accessible design practices. Make your websites inclusive for everyone!",
+      "price": 54.99,
+      "sale": 20,
+      "rating": 4.5,
+      "difficulty": 1,
+      "length": "2:15:00",
+      "image_url": "http://example.com/semantic_accessibility.jpg",
+      "image": "semantic_accessibility.jpg"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "programs.program",
+    "fields": {
+      "category": 5,
+      "sku": "cc1Mv9xL5Tq",
+      "name": "Common Design Principles for UX/UI",
+      "description": "Explore the fundamental design principles for creating engaging and user-friendly interfaces. Elevate your design skills!",
+      "price": 39.99,
+      "sale": 0,
+      "rating": 4.8,
+      "difficulty": 1,
+      "length": "1:20:00",
+      "image_url": "http://example.com/design_principles.jpg",
+      "image": "design_principles.jpg"
+    }
+  },
+  {
+    "pk": 33,
+    "model": "programs.program",
+    "fields": {
+      "category": 6,
+      "sku": "cc2Pt7hR4Kw",
+      "name": "DevOps Fundamentals",
+      "description": "Dive into the core concepts of DevOps and learn how to streamline software development processes for efficiency and collaboration.",
+      "price": 49.99,
+      "sale": 0,
+      "rating": 4.5,
+      "difficulty": 2,
+      "length": "2:40:00",
+      "image_url": "http://example.com/devops_fundamentals.jpg",
+      "image": "devops_fundamentals.jpg"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "programs.program",
+    "fields": {
+      "category": 6,
+      "sku": "cc6Qb3mS1Zr",
+      "name": "Cloud Computing Essentials",
+      "description": "Explore the key concepts of cloud computing and understand how to leverage cloud services for scalable and flexible solutions.",
+      "price": 99.99,
+      "sale": 20,
+      "rating": 4.3,
+      "difficulty": 3,
+      "length": "4:40:00",
+      "image_url": "http://example.com/cloud_computing.jpg",
+      "image": "cloud_computing.jpg"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "programs.program",
+    "fields": {
+      "category": 6,
+      "sku": "cc8Np5zQ3Xt",
+      "name": "Continuous Delivery Practices",
+      "description": "Learn the principles of continuous delivery and implement best practices to achieve faster and more reliable software releases.",
+      "price": 44.99,
+      "sale": 10,
+      "rating": 4.6,
+      "difficulty": 2,
+      "length": "0:45:00",
+      "image_url": "http://example.com/continuous_delivery.jpg",
+      "image": "continuous_delivery.jpg"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "programs.program",
+    "fields": {
+      "category": 7,
+      "sku": "cc4Yr2qE6Vm",
+      "name": "Machine Learning Fundamentals",
+      "description": "Delve into the world of machine learning and gain a foundational understanding of algorithms, models, and applications.",
+      "price": 34.99,
+      "sale": 0,
+      "rating": 4.7,
+      "difficulty": 3,
+      "length": "1:15:00",
+      "image_url": "http://example.com/machine_learning.jpg",
+      "image": "machine_learning.jpg"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "programs.program",
+    "fields": {
+      "category": 7,
+      "sku": "cc9Ks8zV1Lq",
+      "name": "Data Visualization Mastery",
+      "description": "Master the art of data visualization, from choosing the right charts to conveying insights effectively using visualization tools.",
+      "price": 49.99,
+      "sale": 0,
+      "rating": 4.5,
+      "difficulty": 1,
+      "length": "1:55:00",
+      "image_url": "http://example.com/data_visualization.jpg",
+      "image": "data_visualization.jpg"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "programs.program",
+    "fields": {
+      "category": 7,
+      "sku": "cc3Ft6aW9Ds",
+      "name": "Understanding Data Structures",
+      "description": "Build a solid foundation in data structures and algorithms, essential for efficient problem-solving in programming.",
+      "price": 39.99,
+      "sale": 0,
+      "rating": 4.2,
+      "difficulty": 1,
+      "length": "3:30:00",
+      "image_url": "http://example.com/data_structures.jpg",
+      "image": "data_structures.jpg"
+    }
+  },
+  {
+    "pk": 39,
+    "model": "programs.program",
+    "fields": {
+      "category": 7,
+      "sku": "cc7Gx5pZ2Bs",
+      "name": "R Programming Basics",
+      "description": "Get started with R programming language, covering the fundamentals and syntax to kickstart your data analysis journey.",
+      "price": 34.99,
+      "sale": 50,
+      "rating": 4.0,
+      "difficulty": 1,
+      "length": "1:50:00",
+      "image_url": "http://example.com/r_programming.jpg",
+      "image": "r_programming.jpg"
+    }
+  },
+  {
+    "pk": 40,
+    "model": "programs.program",
+    "fields": {
+      "category": 8,
+      "sku": "cc6Tb9dX8Js",
+      "name": "Mastering JavaScript Libraries",
+      "description": "Explore and master popular JavaScript libraries like React, Vue, and Angular to build dynamic and interactive web applications.",
+      "price": 89.99,
+      "sale": 10,
+      "rating": 4.8,
+      "difficulty": 3,
+      "length": "7:10:00",
+      "image_url": "http://example.com/javascript_libraries.jpg",
+      "image": "javascript_libraries.jpg"
+    }
+  },
+  {
+    "pk": 41,
+    "model": "programs.program",
+    "fields": {
+      "category": 8,
+      "sku": "cc2Pv5uY4Kb",
+      "name": "Phaser and Kamboom.js Game Development",
+      "description": "Dive into game development with Phaser and Kamboom.js, creating captivating and entertaining games for various platforms.",
+      "price": 39.99,
+      "sale": 0,
+      "rating": 4.6,
+      "difficulty": 2,
+      "length": "2:30:00",
+      "image_url": "http://example.com/game_dev_libraries.jpg",
+      "image": "game_dev_libraries.jpg"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "programs.program",
+    "fields": {
+      "category": 8,
+      "sku": "cc8Zs3wX6Fu",
+      "name": "Unity Game Engine Intro",
+      "description": "Delve into Unity and create immersive games for various platforms using Unity's powerful game development tools.",
+      "price": 69.99,
+      "sale": 0,
+      "rating": 4.9,
+      "difficulty": 2,
+      "length": "4:20:00",
+      "image_url": "http://example.com/unity_game_engine.jpg",
+      "image": "unity_game_engine.jpg"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "programs.program",
+    "fields": {
+      "category": 8,
+      "sku": "cc1Wv4sZ3Qm",
+      "name": "Blender and 3D Modeling Essentials",
+      "description": "Unlock the world of 3D modeling with Blender, covering essential techniques for creating stunning and realistic 3D assets.",
+      "price": 44.99,
+      "sale": 0,
+      "rating": 4.7,
+      "difficulty": 2,
+      "length": "2:35:00",
+      "image_url": "http://example.com/blender_3d_modeling.jpg",
+      "image": "blender_3d_modeling.jpg"
+    }
+  },
+  {
+    "pk": 43,
+    "model": "programs.program",
+    "fields": {
+      "category": 9,
+      "sku": "ccRn8B5sQa",
+      "name": "React Native Basics",
+      "description": "Kickstart your mobile app development journey with React Native, a powerful framework for building cross-platform mobile applications.",
+      "price": 29.99,
+      "sale": 0,
+      "rating": 4.5,
+      "difficulty": 1,
+      "length": "2:00:00",
+      "image_url": "http://example.com/react_native_basics.jpg",
+      "image": "react_native_basics.jpg"
+    }
+  },
+  {
+    "pk": 44,
+    "model": "programs.program",
+    "fields": {
+      "category": 9,
+      "sku": "ccFl6G8aMl",
+      "name": "Flutter and Google Apps Development",
+      "description": "Learn to build stunning and feature-rich mobile apps with Flutter, Google's UI toolkit, and explore integrating them with various Google services.",
+      "price": 49.99,
+      "sale": 20,
+      "rating": 4.7,
+      "difficulty": 2,
+      "length": "2:25:00",
+      "image_url": "http://example.com/flutter_google_apps.jpg",
+      "image": "flutter_google_apps.jpg"
+    }
+  },
+  {
+    "pk": 45,
+    "model": "programs.program",
+    "fields": {
+      "category": 9,
+      "sku": "ccIos7AplDev",
+      "name": "iOS App Development Essentials",
+      "description": "Unlock the essentials of iOS app development, covering Swift programming, UIKit, and core concepts to create compelling applications for Apple devices.",
+      "price": 25.99,
+      "sale": 0,
+      "rating": 4.8,
+      "difficulty": 2,
+      "length": "1:15:00",
+      "image_url": "http://example.com/ios_app_dev_essentials.jpg",
+      "image": "ios_app_dev_essentials.jpg"
+    }
+  },
+  {
+    "pk": 46,
+    "model": "programs.program",
+    "fields": {
+      "category": 9,
+      "sku": "ccApplDevPkg",
+      "name": "Apple Developer Package",
+      "description": "Embark on your journey as an Apple Developer with this comprehensive package, including programs on iOS, macOS, and watchOS app development.",
+      "price": 89.99,
+      "sale": 10,
+      "rating": 4.9,
+      "difficulty": 1,
+      "length": "2:05:00",
+      "image_url": "http://example.com/apple_dev_package.jpg",
+      "image": "apple_dev_package.jpg"
+    }
+  }
+]
