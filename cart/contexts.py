@@ -19,14 +19,15 @@ def cart_contents(request):
             product = get_object_or_404(Product, pk=item_id)
             product_type = 'product'
 
-        total += item_data * product.price
-        product_count += item_data
+        quantity = item_data.get('quantity', 0)  # Access the 'quantity' value from item_data
+        total += quantity * product.price
+        product_count += quantity
         cart_items.append({
-                'item_id': int(item_id),
-                'quantity': item_data,
-                'product': product,
-                "type": product_type
-            })
+            'item_id': int(item_id),
+            'quantity': quantity,
+            'product': product,
+            'product_type': product_type
+        })
 
     context = {
         'cart_items': cart_items,
@@ -34,4 +35,3 @@ def cart_contents(request):
     }
 
     return context
-

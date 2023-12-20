@@ -198,7 +198,6 @@
                     <div class="col"><b> Total:</b></div>
                     <div class="col d-flex justify-content-end"><b>${{ total | floatformat:2 }}</b></div>
                   </div>
-                  <button class="btn mx-auto btn btn-primary btn-lg">Track your order</button>
                 </div>
               </div>
             </div>
@@ -209,9 +208,9 @@
 {% endblock %}
 
 
-{% block postloadjs %}
+{% comment %} {% block postloadjs %}
     {{ block.super }}
     {{ stripe_public_key|json_script:"id_stripe_public_key" }}
     {{ client_secret|json_script:"id_client_secret" }}
     <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
-{% endblock %}
+{% endblock %} {% endcomment %}

@@ -20,20 +20,23 @@ def add_to_cart(request, item_id):
 
     if item_type == 'product':
         product = get_object_or_404(Product, pk=item_id)
+        product_type = 'product'
     else:
         product = get_object_or_404(Program, pk=item_id )
+        product_type = 'program'
+
+
 
     quantity = request.POST.get('quantity')
     redirect_url = request.POST.get('redirect_url')
     cart = request.session.get('cart', {})
 
     if item_id in list(cart.keys()) and quantity:
-        cart[item_id] += int(quantity)
+        cart[item_id]['quantity'] += int(quantity)
         messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
     else:
-        cart[item_id] = 1
+        cart[item_id] = {'quantity': 1, 'product_type': product_type}
         messages.success(request, f'Added {product.name} to your cart')
-
 
     request.session['cart'] = cart
     return redirect(redirect_url)

@@ -19,7 +19,7 @@
     <td data-th="Price">{{item.product.price}}</td>
     <td data-th="Quantity">
 
-      {% if item.type == 'product'  %}
+      {% if item.product_type == 'product'  %}
       <input
       type="number"
       class="form-control form-control-lg text-center"
@@ -30,7 +30,7 @@
       {% endif %}
 
       <div class="d-flex my-1 justify-content-around">
-        {% if item.type == 'product'  %}
+        {% if item.product_type == 'product'  %}
 
         <button
           class="btn btn-light btn-sm mb-2 border-secondary"
