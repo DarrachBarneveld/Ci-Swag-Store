@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
+{% load cart_tools %}
+
 
 {% block page_header %}
 <header class="bg-dark">
@@ -42,45 +44,17 @@
                                 <div class="row">
                                   <div class="col-lg-4">
                                     <div class="mb-3">
-                                      <label class="form-label" for="billing-name"
-                                        >Name</label
-                                      >
-                                      <input
-                                        type="text"
-                                        class="form-control"
-                                        id="billing-name"
-                                        placeholder="Enter name"
-                                      />
+                                      {{ order_form.full_name | as_crispy_field }}
                                     </div>
                                   </div>
                                   <div class="col-lg-4">
                                     <div class="mb-3">
-                                      <label
-                                        class="form-label"
-                                        for="billing-email-address"
-                                        >Email Address</label
-                                      >
-                                      <input
-                                        type="email"
-                                        class="form-control"
-                                        id="billing-email-address"
-                                        placeholder="Enter email"
-                                      />
+                                      {{ order_form.email | as_crispy_field }}
                                     </div>
                                   </div>
                                   <div class="col-lg-4">
                                     <div class="mb-3">
-                                      <label
-                                        class="form-label"
-                                        for="billing-phone"
-                                        >Phone</label
-                                      >
-                                      <input
-                                        type="text"
-                                        class="form-control"
-                                        id="billing-phone"
-                                        placeholder="Enter Phone no."
-                                      />
+                                      {{ order_form.phone_number | as_crispy_field }}
                                     </div>
                                   </div>
                                 </div>
@@ -97,54 +71,16 @@
                         </div>
                       </div>
                       <div class="feed-item-list mb-3">
-                        <label class="form-label" for="billing-address"
-                          >St address 1</label
-                        >
-                        <input
-                          class="form-control"
-                          id="st-address-1"
-                          type="text"
-                          placeholder="Enter address 1"
-                        />
-                        <label class="form-label" for="billing-address"
-                          >St address 2</label
-                        >
-                        <input
-                          class="form-control"
-                          id="st-address-2"
-                          type="text"
-                          placeholder="Enter address 2"
-                        />
+                        {{ order_form.street_address1 | as_crispy_field }}
+
+                        {{ order_form.street_address2 | as_crispy_field }}
+
+                        {{ order_form.town_or_city | as_crispy_field }}
+
+                        {{ order_form.county | as_crispy_field }}
   
-                        <label class="form-label" for="billing-address"
-                          >Town or city</label
-                        >
-                        <input
-                          class="form-control"
-                          id="st-address-2"
-                          type="text"
-                          placeholder="Enter address 2"
-                        />
-  
-                        <label class="form-label" for="billing-address"
-                          >town or city</label
-                        >
-                        <input
-                          class="form-control"
-                          id="st-address-2"
-                          type="text"
-                          placeholder="Enter address 2"
-                        />
-  
-                        <label class="form-label" for="billing-address"
-                          >Post code</label
-                        >
-                        <input
-                          class="form-control"
-                          id="st-address-2"
-                          type="number"
-                          placeholder="Enter address 2"
-                        />
+                        {{ order_form.postcode | as_crispy_field }}
+
                         <label class="form-label" for="billing-address"
                           >Country</label
                         >
@@ -214,27 +150,31 @@
               <div class="card-body">
                 <div class="p-3 bg-light mb-3">
                   <h5 class="font-size-16 mb-0">
-                    Order Summary <span class="float-end ms-2">#MN0124</span>
+                    Order Summary <span class="float-end ms-2">({{ product_count }})</span>
                   </h5>
                 </div>
-                <div class="card border-0">
+                {% for item in cart_items %}
+
+                <div class="card border-0 my-2">
                   <div class="row">
-                    <div class="col-3">
+                    <div class="col-3 p-0">
                       <img class="avatar-lg"  src="https://i.imgur.com/qSnCFIS.png" />
                     </div>
                     <div class="col-6">
                       <div class="row d-flex">
-                        <p class='small'>Python List Comprehension Unleashed
+                        <p class='small'>{{ item.product.name }}
                         </p>
                       </div>
                       <div class="row d-flex">
-                        <p class="text-muted small">Quantity x2</p>
+                        <p class="text-muted small">Quantity {{item.quantity}}</p>
                       </div>
                     </div>
                     <div class="col-3 d-flex justify-content-end">
-                      <p class='fw-bold'>$599</p>
+                      <p class='fw-bold'>${{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </div>
                   </div>
+                  {% endfor %}
+
 
                   <hr />
                   <div class="row mb-2">
@@ -243,7 +183,7 @@
                   </div>
                   <div class="row mb-2">
                     <div class="col"><b> Total:</b></div>
-                    <div class="col d-flex justify-content-end"><b>$847.95</b></div>
+                    <div class="col d-flex justify-content-end"><b>${{ total | floatformat:2 }}</b></div>
                   </div>
                   <button class="btn mx-auto btn btn-primary btn-lg">Track your order</button>
                 </div>
