@@ -2,6 +2,10 @@
 {% load static %}
 {% load cart_tools %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
 
 {% block page_header %}
 <header class="bg-dark">
@@ -24,7 +28,8 @@
           <div class="col-xl-8">
             <div class="card">
               <div class="card-body">
-                <form>
+                <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                  {% csrf_token %}
                   <ol class="activity-checkout mb-0 px-4 mt-3">
                     <li class="checkout-item">
                       <div class="avatar checkout-icon p-1">
@@ -39,7 +44,6 @@
                             Sed ut perspiciatis unde omnis iste
                           </p>
                           <div class="mb-3">
-                            <form>
                               <div>
                                 <div class="row">
                                   <div class="col-lg-4">
@@ -59,7 +63,6 @@
                                   </div>
                                 </div>
                               </div>
-                            </form>
                           </div>
                         </div>
                       </div>
@@ -121,30 +124,40 @@
                           </p>
                         </div>
                       </div>
+                      <fieldset class="px-3">
+                        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                        <!-- A Stripe card element will go here -->
+                        <div class="mb-3" id="card-element"></div>
+                        <!-- Used to display form errors -->
+                        <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+                        <!-- Pass the client secret to the view so we can get the payment intent id -->
+                        <input type="hidden" value="{{ client_secret }}" name="client_secret">
+                    </fieldset>
                     </li>
                   </ol>
+                  <div class="row my-4">
+                    <div class="col">
+                      <a href="ecommerce-products.html" class="btn btn-outline-dark">
+                        <i class="mdi mdi-arrow-left me-1"></i> Continue Shopping
+                      </a>
+                    </div>
+                    <!-- end col -->
+                    <div class="col">
+                      <div class="text-end mt-2 mt-sm-0">
+                        <button type='submit' href="#" class="btn btn-success">
+                           Pay Now
+                        </button>
+                      </div>
+                    </div>
+                    <!-- end col -->
+                  </div>
+                  <!-- end row-->
+                </div>
                 </form>
               </div>
             </div>
   
-            <div class="row my-4">
-              <div class="col">
-                <a href="ecommerce-products.html" class="btn btn-link text-muted">
-                  <i class="mdi mdi-arrow-left me-1"></i> Continue Shopping
-                </a>
-              </div>
-              <!-- end col -->
-              <div class="col">
-                <div class="text-end mt-2 mt-sm-0">
-                  <a href="#" class="btn btn-success">
-                    <i class="mdi mdi-cart-outline me-1"></i> Procced
-                  </a>
-                </div>
-              </div>
-              <!-- end col -->
-            </div>
-            <!-- end row-->
-          </div>
+      
           <div class="col-xl-4">
             <div class="card checkout-order-summary">
               <div class="card-body">
@@ -193,4 +206,12 @@
         </div>
         <!-- end row -->
     </section>
+{% endblock %}
+
+
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
