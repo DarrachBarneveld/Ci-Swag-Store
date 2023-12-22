@@ -75,11 +75,11 @@ class CheckoutView(View):
 
 
                 try:
-                    if item_data['product_type'] == 'product':
-                        content_type = ContentType.objects.get_for_model(Product)
+                    if int(item_data) >= 26:
+                        content_type = ContentType.objects.get_for_model(Program)
 
                     else:
-                        content_type = ContentType.objects.get_for_model(Program)
+                        content_type = ContentType.objects.get_for_model(Product)
 
                     order_line_item = OrderLineItem(
                             order=order,

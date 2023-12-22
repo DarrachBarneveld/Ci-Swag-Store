@@ -16,14 +16,11 @@ def view_cart(request):
 def add_to_cart(request, item_id):
     """ Add a quantity of the specified product to the shopping cart """
 
-    item_type = request.POST.get('item_type')
-
-    if item_type == 'product':
-        product = get_object_or_404(Product, pk=item_id)
-        product_type = 'product'
+    print(item_id)
+    if int(item_id) >= 26:
+        product = get_object_or_404(Program, pk=item_id)
     else:
-        product = get_object_or_404(Program, pk=item_id )
-        product_type = 'program'
+        product = get_object_or_404(Product, pk=item_id )
 
 
 
@@ -35,8 +32,9 @@ def add_to_cart(request, item_id):
         cart[item_id]['quantity'] += int(quantity)
         messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
     else:
-        cart[item_id] = {'quantity': 1, 'product_type': product_type}
+        cart[item_id] = 1
         messages.success(request, f'Added {product.name} to your cart')
+
 
     request.session['cart'] = cart
     return redirect(redirect_url)

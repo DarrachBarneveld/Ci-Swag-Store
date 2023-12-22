@@ -14,19 +14,15 @@ def cart_contents(request):
     for item_id, item_data in cart.items():
         if int(item_id) >= 26:
             product = get_object_or_404(Program, pk=item_id)
-            product_type = 'program'
         else:
             product = get_object_or_404(Product, pk=item_id)
-            product_type = 'product'
 
-        quantity = item_data.get('quantity', 0)
-        total += quantity * product.price
-        product_count += quantity
+        total += item_data * product.price
+        product_count += item_data
         cart_items.append({
             'item_id': int(item_id),
-            'quantity': quantity,
+            'quantity': item_data,
             'product': product,
-            'product_type': product_type
         })
 
     context = {
