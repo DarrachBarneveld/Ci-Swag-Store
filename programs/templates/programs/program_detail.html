@@ -103,22 +103,65 @@
                {{program.description}}
               </p>
 
-              <form class="form"  action="{% url 'add_to_cart' program.id %}" method="POST">
-                {% csrf_token %}
-                <input type="hidden" name="item_type" value="program">
-                <div class='d-flex mb-3'>
-                  <button type='submit' class="btn btn-primary flex-shrink-0"> 
-                    <i class="fa-solid fa-school"></i> Enroll Now</button>
-                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                </div>
+
+            {% if purchased %}
+              <button class="btn btn-secondary" disabled>Enrolled!</button>
+            {% endif %}
+            
+            {% if not purchased and cart_items|length > 0 %}
+            {% for item in cart_items %}
+            {% if program.id == item.item_id %}
+            <form class="form" action="{% url 'remove_from_cart' program.id %}" method="POST">
+              {% csrf_token %}
+              <div class="d-flex mb-3">
+                <button type="submit" class="btn btn-danger flex-shrink-0">
+                  <i class="fa-solid fa-trash"></i> Remove from Cart
+                </button>
+                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+              </div>
             </form>
+            {% else %}
+            <form class="form" action="{% url 'add_to_cart' program.id %}" method="POST">
+              {% csrf_token %}
+              <div class="d-flex mb-3">
+                <button type="submit" class="btn btn-primary flex-shrink-0">
+                  <i class="fa-solid fa-school"></i> Add to Cart
+                </button>
+                <input type="hidden" name="item_type" value="program">
+                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+              </div>
+            </form>
+            {% endif %}
+            {% endfor %}
+
+            {% elif not purchased %}
+            <form class="form" action="{% url 'add_to_cart' program.id %}" method="POST">
+              {% csrf_token %}
+              <div class="d-flex mb-3">
+                <button type="submit" class="btn btn-primary flex-shrink-0">
+                  <i class="fa-solid fa-school"></i> Add to Cart
+                </button>
+                <input type="hidden" name="item_type" value="program">
+                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+              </div>
+            </form>
+            {% endif %}
+
+
+
+            
+    
+
+         
+
+
             </div>
           </div>
         </div>
       </section>
 
-        {% for item in cart_items %}        
-        {% if program.id == item.item_id %}
+
+        {% if purchased %}
         <section class="bg-dark container pb-5">
           <h2 class='text-light text-center p-5'>{{program.name}}</h2>
           <div class='mx-auto video-container'>
@@ -126,7 +169,6 @@
           </div>
           </section>
         {% endif %}
-      {% endfor %}
   
 
       <!-- Related items section-->

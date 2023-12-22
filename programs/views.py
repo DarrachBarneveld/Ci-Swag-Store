@@ -31,6 +31,15 @@ def program_detail(request, program_id):
     program = get_object_or_404(Program, pk=program_id)
     related_products = Program.objects.filter(category=program.category).exclude(pk=program.id)
 
+    orders = request.user.userprofile.orders.all()
+
+    purchased = False
+    for order in orders:
+        for item in order.lineitems.all():
+            if item.content_object.id == program_id:
+                purchased = True
+
+
     paginator = Paginator(related_products, 4)
     page = request.GET.get('page')
 
@@ -45,7 +54,8 @@ def program_detail(request, program_id):
 
     context = {
         'program': program,
-        'related_products': related_products
+        'related_products': related_products,
+        "purchased" : purchased
     }
 
 
