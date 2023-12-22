@@ -19,7 +19,7 @@ def cart_contents(request):
             product = get_object_or_404(Product, pk=item_id)
             product_type = 'product'
 
-        quantity = item_data.get('quantity', 0)  # Access the 'quantity' value from item_data
+        quantity = item_data.get('quantity', 0)
         total += quantity * product.price
         product_count += quantity
         cart_items.append({

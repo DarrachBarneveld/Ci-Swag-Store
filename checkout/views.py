@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.views import View
 from django.conf import settings
+from django.contrib.contenttypes.models import ContentType
+
 from .forms import OrderForm
 
 from .models import Order, OrderLineItem
@@ -71,14 +73,15 @@ class CheckoutView(View):
 
                 try:
                     if item_data['product_type'] == 'product':
-                        product = Product.objects.get(id=item_id)
+                        content_type = ContentType.objects.get_for_model(Product)
+
                     else:
-                        product = Program.objects.get(id=item_id)
-                    
-                    
+                        content_type = ContentType.objects.get_for_model(Program)
+
                     order_line_item = OrderLineItem(
                             order=order,
-                            product=product,
+                            content_type=content_type,
+                            object_id=item_id,
                             quantity=item_data['quantity'],
                         )
                     order_line_item.save()
@@ -111,6 +114,8 @@ def checkout_success(request, order_number):
 
     if 'cart' in request.session:
         del request.session['cart']
+
+    print(order)
 
     template = 'checkout/checkout_success.html'
     context = {
