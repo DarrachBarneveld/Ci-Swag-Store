@@ -36,11 +36,16 @@
         <i class="fa-solid fa-pen text-primary "></i>
         </button>
         {% endif %}
+        <form class="form" action="{% url 'remove_from_cart' item.product.id %}" method="POST">
+          {% csrf_token %}
         <button
+        type='submit'
           class="btn btn-light btn-sm mb-2 border-secondary"
         >
           <i class="fas fa-trash text-danger"></i>
         </button>
+        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+      </form>
       </div>
     </td>
     <td data-th="Subtotal">${{ item.product.price | calc_subtotal:item.quantity }}</td>
