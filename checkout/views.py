@@ -8,19 +8,13 @@ from .forms import OrderForm
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 
-
-
 from .models import Order, OrderLineItem
 from products.models import Product
 from programs.models import Program
 
-
-
-
 from cart.contexts import cart_contents
 
 import stripe
-
 
 # Create your views here.
 class CheckoutView(View):
@@ -90,17 +84,18 @@ class CheckoutView(View):
             order = order_form.save()
             for item_id, item_data in cart.items():
                 try:
-                    if int(item_data) >= 26:
+                    if int(item_id) >= 26:
                         content_type = ContentType.objects.get_for_model(Program)
 
                     else:
                         content_type = ContentType.objects.get_for_model(Product)
 
+
                     order_line_item = OrderLineItem(
                             order=order,
                             content_type=content_type,
                             object_id=item_id,
-                            quantity=item_data['quantity'],
+                            quantity=item_data,
                         )
                     order_line_item.save()
 

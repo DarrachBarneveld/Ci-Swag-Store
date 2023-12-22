@@ -62,7 +62,7 @@
               <div class="fs-5 mb-3">
                 {% if program.sale %}
                 <span class="text-decoration-line-through">${{program.price}}</span>
-                <span>${{program.total_program_price}}</span>
+                <span>${{program.total_final_price}}</span>
                 {% else %}
                 <span>${{program.price}}</span>
                 {% endif %}
@@ -104,48 +104,30 @@
               </p>
 
 
-            {% if purchased %}
+              {% if purchased %}
               <button class="btn btn-secondary" disabled>Enrolled!</button>
-            {% endif %}
-            
-            {% if not purchased and cart_items|length > 0 %}
-            {% for item in cart_items %}
-            {% if program.id == item.item_id %}
-            <form class="form" action="{% url 'remove_from_cart' program.id %}" method="POST">
-              {% csrf_token %}
-              <div class="d-flex mb-3">
-                <button type="submit" class="btn btn-danger flex-shrink-0">
-                  <i class="fa-solid fa-trash"></i> Remove from Cart
-                </button>
-                <input type="hidden" name="redirect_url" value="{{ request.path }}">
-              </div>
+              {% elif in_cart %}
+              <form class="form" action="{% url 'remove_from_cart' program.id %}" method="POST">
+                {% csrf_token %}
+                <div class="d-flex mb-3">
+                    <button type="submit" class="btn btn-danger flex-shrink-0">
+                        <i class="fa-solid fa-trash"></i> Remove from Cart
+                    </button>
+                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                </div>
+              </form>
+              {% else %}
+              <form class="form" action="{% url 'add_to_cart' program.id %}" method="POST">
+                {% csrf_token %}
+                <div class="d-flex mb-3">
+                    <button type="submit" class="btn btn-primary flex-shrink-0">
+                        <i class="fa-solid fa-school"></i> Add to Cart
+                    </button>
+                    <input type="hidden" name="item_type" value="program">
+                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                </div>
             </form>
-            {% else %}
-            <form class="form" action="{% url 'add_to_cart' program.id %}" method="POST">
-              {% csrf_token %}
-              <div class="d-flex mb-3">
-                <button type="submit" class="btn btn-primary flex-shrink-0">
-                  <i class="fa-solid fa-school"></i> Add to Cart
-                </button>
-                <input type="hidden" name="item_type" value="program">
-                <input type="hidden" name="redirect_url" value="{{ request.path }}">
-              </div>
-            </form>
-            {% endif %}
-            {% endfor %}
-
-            {% elif not purchased %}
-            <form class="form" action="{% url 'add_to_cart' program.id %}" method="POST">
-              {% csrf_token %}
-              <div class="d-flex mb-3">
-                <button type="submit" class="btn btn-primary flex-shrink-0">
-                  <i class="fa-solid fa-school"></i> Add to Cart
-                </button>
-                <input type="hidden" name="item_type" value="program">
-                <input type="hidden" name="redirect_url" value="{{ request.path }}">
-              </div>
-            </form>
-            {% endif %}
+                  {% endif %}
             </div>
           </div>
         </div>
@@ -196,7 +178,7 @@
                   <!-- Product price-->
                   {% if related.sale %}
                   <span class="text-decoration-line-through">${{related.price}}</span>
-                  <span>${{related.total_program_price}}</span>
+                  <span>${{related.total_final_price}}</span>
                   {% else %}
                   <span>${{related.price}}</span>
                   {% endif %}

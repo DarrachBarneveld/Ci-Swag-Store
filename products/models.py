@@ -35,7 +35,7 @@ class Product(models.Model):
         return ['item' for _ in range(round(self.rating))]
 
     @property
-    def total_product_price(self):
+    def total_final_price(self):
         discounted_amount = (self.sale / Decimal(100)) * self.price
         result = self.price - discounted_amount
         return result.quantize(Decimal('0.00'))

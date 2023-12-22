@@ -183,7 +183,7 @@
                       </div>
                     </div>
                     <div class="col-3 d-flex justify-content-end">
-                      <p class='fw-bold'>${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                      <p class='fw-bold'>${{ item.product.total_final_price | calc_subtotal:item.quantity }}</p>
                     </div>
                   </div>
                   {% endfor %}

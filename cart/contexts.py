@@ -17,7 +17,7 @@ def cart_contents(request):
         else:
             product = get_object_or_404(Product, pk=item_id)
 
-        total += item_data * product.price
+        total += item_data * product.total_final_price
         product_count += item_data
         cart_items.append({
             'item_id': int(item_id),

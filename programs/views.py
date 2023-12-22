@@ -3,6 +3,8 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from products.models import Category
 from .models import Program
+from cart.contexts import cart_contents
+
 
 # Create your views here.
 def all_programs(request):
@@ -46,6 +48,11 @@ def program_detail(request, program_id):
             if item.content_object.id == program_id:
                 purchased = True
 
+    current_cart = cart_contents(request)
+    in_cart = any(item['product'].id == program.id for item in current_cart['cart_items'])
+
+
+    print(in_cart)
 
     paginator = Paginator(related_products, 4)
     page = request.GET.get('page')
@@ -62,7 +69,8 @@ def program_detail(request, program_id):
     context = {
         'program': program,
         'related_products': related_products,
-        "purchased" : purchased
+        "purchased" : purchased,
+        'in_cart': in_cart
     }
 
 

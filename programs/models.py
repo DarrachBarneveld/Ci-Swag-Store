@@ -30,13 +30,11 @@ class Program(models.Model):
     def difficulty_array(self):
         return ['item' for _ in range(round(self.difficulty))]
 
-    
     @property
-    def total_program_price(self):
+    def total_final_price(self):
         discounted_amount = (self.sale / Decimal(100)) * self.price
         result = self.price - discounted_amount
         return result.quantize(Decimal('0.00'))
-
 
     def __str__(self):
         return self.name

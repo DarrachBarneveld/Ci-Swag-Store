@@ -11,36 +11,44 @@
       <div class="col-lg-8">
         <div class="card-body">
           {% if program.sale %}
-            <h5>Example heading 
-              <span class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                {{program.sale}}% Sale
-              </span>
-            </h5>
+          <h5>
+            Example heading
+            <span
+              class="badge bg-success text-white position-absolute"
+              style="top: 0.5rem; right: 0.5rem"
+            >
+              {{program.sale}}% Sale
+            </span>
+          </h5>
           {% endif %}
           <h5 class="card-title">
             <strong class="d-inline-block mb-2 text-primary"
               >{{program.name}}</strong
             >
           </h5>
-          <p class="card-text text-secondary pb-2 border-bottom">{{program.description}}</p>
+          <p class="card-text text-secondary pb-2 border-bottom">
+            {{program.description}}
+          </p>
           <div class="my-2 d-flex text-secondary flex-wrap">
-            <span class='me-1'>Rating:</span>
+            <span class="me-1">Rating:</span>
             {% for i in program.rating_array %}
             <div class="bi-star-fill text-warning"></div>
             {% endfor %}
-            <span class='ms-1 bg-dark rounded-3 text-white px-1'>{{program.rating}}</span>
-            <span class='me-1 ms-2'>Price:</span>
-            <strong class='text-dark'>${{program.total_program_price}}</strong>
+            <span class="ms-1 bg-dark rounded-3 text-white px-1"
+              >{{program.rating}}</span
+            >
+            <span class="me-1 ms-2">Price:</span>
+            <strong class="text-dark">${{program.total_final_price}}</strong>
           </div>
-            <div class="d-flex text-secondary">
+          <div class="d-flex text-secondary">
             <p class="mb-2">
-              <span class='me-1'>Length:</span><strong class='text-dark'>{{program.length}}
-              </strong>
+              <span class="me-1">Length:</span
+              ><strong class="text-dark">{{program.length}} </strong>
             </p>
             <div class="ms-2 mb-2 d-flex">
-              <span class='me-1'>Difficulty:</span> 
-              {% for i in program.difficulty_array %}
-                {% include 'includes/difficulty.html' with difficulty=program.difficulty%}
+              <span class="me-1">Difficulty:</span>
+              {% for i in program.difficulty_array %} 
+              {% include 'includes/difficulty.html' with difficulty=program.difficulty %} 
               {% endfor %}
             </div>
           </div>
