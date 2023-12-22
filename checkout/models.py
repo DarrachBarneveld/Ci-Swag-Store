@@ -9,21 +9,6 @@ from django.contrib.contenttypes.models import ContentType
 from profiles.models import UserProfile
 
 
-class TaggedItem(models.Model):
-    tag = models.SlugField()
-    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
-    object_id = models.PositiveIntegerField()
-    content_object = GenericForeignKey("content_type", "object_id")
-
-    def __str__(self):
-        return self.tag
-
-    class Meta:
-        indexes = [
-            models.Index(fields=["content_type", "object_id"]),
-        ]
-
-
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
@@ -55,10 +40,7 @@ class Order(models.Model):
         accounting for delivery costs.
         """
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
-        if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
-            self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
-        else:
-            self.delivery_cost = 0
+
         self.grand_total = self.order_total + self.delivery_cost
         self.save()
 
