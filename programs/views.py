@@ -31,7 +31,14 @@ def program_detail(request, program_id):
     program = get_object_or_404(Program, pk=program_id)
     related_products = Program.objects.filter(category=program.category).exclude(pk=program.id)
 
-    orders = request.user.userprofile.orders.all()
+    if request.user.is_authenticated:
+        if hasattr(request.user, 'userprofile'):
+            orders = request.user.userprofile.orders.all()
+        else:
+            orders = []
+    else:
+        orders = []
+
 
     purchased = False
     for order in orders:

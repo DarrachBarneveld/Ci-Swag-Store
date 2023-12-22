@@ -47,8 +47,6 @@ card.addEventListener("change", function (event) {
 // Handle form submit
 const form = document.getElementById("payment-form");
 
-console.log(form);
-
 form.addEventListener("submit", function (ev) {
   ev.preventDefault();
   card.update({ disabled: true });
@@ -123,3 +121,5 @@ form.addEventListener("submit", function (ev) {
       location.reload();
     });
 });
+
+console.log("hi");

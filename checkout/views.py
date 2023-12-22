@@ -34,16 +34,34 @@ class CheckoutView(View):
         total = current_cart['total']
 
         stripe_total = round(total * 100)
+        if request.user.is_authenticated:
+            try:
+                profile=UserProfile.objects.get(user=request.user)
+                order_form = OrderForm(initial={
+                    'full_name': profile.user.get_full_name(),
+                    'email': profile.user.email,
+                    'phone_number': profile.default_phone_number,
+                    'postcode': profile.default_postcode,
+                    'town_or_city': profile.default_town_or_city,
+                    'street_address1': profile.default_street_address1,
+                    'street_address2': profile.default_street_address2,
+                    'county': profile.default_county
+                })
+            except UserProfile.DoesNotExist:
+                order_form = OrderForm()
+        else:
+            order_form = OrderForm()
 
-        order_form = OrderForm()
+        if not self.stripe_secret_key:
+            messages.warning(request, 'Stripe public key is missing. \
+                    Did you forget to set it in your environment?')
+        
         stripe.api_key = self.stripe_secret_key
 
         intent = stripe.PaymentIntent.create(
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-        for item_id, item_data in cart.items():
-            print(item_data)
 
         context = {
             'order_form': order_form,
@@ -71,9 +89,6 @@ class CheckoutView(View):
         if order_form.is_valid():
             order = order_form.save()
             for item_id, item_data in cart.items():
-
-
-
                 try:
                     if int(item_data) >= 26:
                         content_type = ContentType.objects.get_for_model(Program)

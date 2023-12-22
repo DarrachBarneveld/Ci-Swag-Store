@@ -16,7 +16,8 @@ def view_cart(request):
 def add_to_cart(request, item_id):
     """ Add a quantity of the specified product to the shopping cart """
 
-    quantity = int(request.POST.get('quantity'))
+
+    quantity = request.POST.get('quantity')
 
     if int(item_id) >= 26:
         product = get_object_or_404(Program, pk=item_id)
