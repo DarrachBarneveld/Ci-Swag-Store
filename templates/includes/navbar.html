@@ -91,7 +91,14 @@
         </ul>
       </div>
       <a class="nav-link text-secondary" href="{% url "view_cart" %}" aria-expanded="false">
-        <i class="fas fa-shopping-bag fa-lg"></i>
+        <i class="fas fa-shopping-bag fa-lg position-relative">
+          {% if cart_items|length > 0 %}
+          <span class="position-absolute translate-middle p-1 bg-danger border border-light rounded-circle">
+          <span class="visually-hidden">New alerts</span>
+          {% endif %}
+        </i>
+  
+        </span>
       </a>
     </div>
   </nav>
