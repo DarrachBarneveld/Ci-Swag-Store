@@ -68,8 +68,10 @@ class ProfileView(LoginRequiredMixin, View):
         else:
             if profile_form.is_valid():
                 profile_form.save()
+                context["profile_form"] = profile_form
                 messages.success(request, 'Profile updated successfully')
             else:
+                context["profile_form"] = profile_form
                 messages.error(request, 'Update failed. Please ensure the forms are valid.')
 
         return render(request, self.template_name, context)

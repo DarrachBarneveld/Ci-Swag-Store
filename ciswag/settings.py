@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap4',
     'embed_video',
+    'phonenumber_field'
 
 ]
 
@@ -181,5 +182,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
+STRIPE_SECRET_KEY = os.environ.get('STRIPE_WH_KEY')
 STRIPE_CURRENCY = 'usd'
 DEFAULT_FROM_EMAIL = 'ciswag@example.com'

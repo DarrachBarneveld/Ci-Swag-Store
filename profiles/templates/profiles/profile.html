@@ -80,19 +80,7 @@
                 Sed ut perspiciatis unde omnis iste
               </p>
               <div class="feed-item-list mb-3">
-                {{ profile_form.default_phone_number | as_crispy_field }}
-                <!--  -->
-                {{ profile_form.default_street_address1 | as_crispy_field }}
-                <!--  -->
-                {{ profile_form.default_street_address2 | as_crispy_field }}
-                <!--  -->
-                {{ profile_form.default_town_or_city | as_crispy_field }}
-                <!--  -->
-                {{profile_form.default_county | as_crispy_field }}
-                <!--  -->
-                {{ profile_form.default_postcode| as_crispy_field }}
-                <!--  -->
-                {{ profile_form.default_country | as_crispy_field }}
+                {{profile_form | crispy}}
               </div>
             </li>
             <button class="my-4 btn btn-primary float-right">
