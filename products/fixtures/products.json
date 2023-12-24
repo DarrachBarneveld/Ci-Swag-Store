@@ -11,7 +11,7 @@
       "category": 1,
       "rating": 3.4,
       "image_url": "http://example.com/winter_beanie.jpg",
-      "image": "winter_beanie.jpg"
+      "image": "mug.jpg"
     }
   },
   {
@@ -161,7 +161,7 @@
       "category": 2,
       "rating": 3.2,
       "image_url": "http://example.com/ballpoint_pen.jpg",
-      "image": "ballpoint_pen.jpg"
+      "image": "pen.jpg"
     }
   },
   {
@@ -221,7 +221,7 @@
       "category": 2,
       "rating": 3.3,
       "image_url": "http://example.com/ergonomic_mouse.jpg",
-      "image": "ergonomic_mouse.jpg"
+      "image": "mouse.jpg"
     }
   },
   {
@@ -236,7 +236,7 @@
       "category": 2,
       "rating": 2.3,
       "image_url": "http://example.com/gaming_keyboard.jpg",
-      "image": "gaming_keyboard.jpg"
+      "image": "keyboard.jpg"
     }
   },
   {
@@ -251,7 +251,7 @@
       "category": 2,
       "rating": 4.0,
       "image_url": "http://example.com/notepad_set.jpg",
-      "image": "notepad_set.jpg"
+      "image": "notepad.jpg"
     }
   },
   {
@@ -266,7 +266,7 @@
       "category": 2,
       "rating": 5,
       "image_url": "http://example.com/large_mousepad.jpg",
-      "image": "large_mousepad.jpg"
+      "image": "mousepad.jpg"
     }
   },
 
@@ -282,7 +282,7 @@
       "category": 3,
       "rating": 4.2,
       "image_url": "http://example.com/wall_calendar.jpg",
-      "image": "wall_calendar.jpg"
+      "image": "calendar.jpg"
     }
   },
   {
@@ -312,7 +312,7 @@
       "category": 3,
       "rating": 3.8,
       "image_url": "http://example.com/blue_light_glasses.jpg",
-      "image": "blue_light_glasses.jpg"
+      "image": "glasses.jpg"
     }
   },
   {
@@ -342,7 +342,7 @@
       "category": 3,
       "rating": 3.5,
       "image_url": "http://example.com/pomodoro_clock.jpg",
-      "image": "pomodoro_clock.jpg"
+      "image": "clock.jpg"
     }
   },
   {
@@ -372,7 +372,7 @@
       "category": 3,
       "rating": 4.4,
       "image_url": "http://example.com/ceramic_mug.jpg",
-      "image": "ceramic_mug.jpg"
+      "image": "mug.jpg"
     }
   }
 ]
