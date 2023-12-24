@@ -40,6 +40,7 @@ class CheckoutView(View):
                     'full_name': profile.user.get_full_name(),
                     'email': profile.user.email,
                     'phone_number': profile.default_phone_number,
+                    'country': profile.default_country,
                     'postcode': profile.default_postcode,
                     'town_or_city': profile.default_town_or_city,
                     'street_address1': profile.default_street_address1,
@@ -77,6 +78,7 @@ class CheckoutView(View):
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
             'phone_number': request.POST['phone_number'],
+            'country': request.POST['country'],
             'postcode': request.POST['postcode'],
             'town_or_city': request.POST['town_or_city'],
             'street_address1': request.POST['street_address1'],
@@ -85,6 +87,7 @@ class CheckoutView(View):
         }
 
         order_form = OrderForm(form_data)
+
         if order_form.is_valid():
             order = order_form.save()
             for item_id, item_data in cart.items():
@@ -136,6 +139,7 @@ def checkout_success(request, order_number):
         if save_info:
             profile_data = {
                 'default_phone_number': order.phone_number,
+                'default_country': order.country,
                 'default_postcode': order.postcode,
                 'default_town_or_city': order.town_or_city,
                 'default_street_address1': order.street_address1,

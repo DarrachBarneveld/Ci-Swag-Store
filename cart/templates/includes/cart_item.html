@@ -20,7 +20,7 @@
   </td>
   <td data-th="Price">{{item.product.price}}</td>
   <td data-th="Quantity">
-    {% if item.product.id <= 26 %}
+    {% if item.product.id < 26 %}
     <input
       type="number"
       class="form-control form-control-lg text-center"
@@ -33,7 +33,7 @@
     {% endif %}
 
     <div class="d-flex my-1 justify-content-around">
-      {% if item.product.id <= 26 %}
+      {% if item.product.id < 26 %}
       <button class="btn btn-light btn-sm mb-2 border-secondary">
         <i class="fa-solid fa-pen text-primary"></i>
       </button>
