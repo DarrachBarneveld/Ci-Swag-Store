@@ -18,12 +18,7 @@
 <div class="container py-5">
   <div class="row">
     <div class="col-12 col-lg-6">
-      <form
-        class="mt-3"
-        action="{% url 'profile' %}"
-        method="POST"
-        id="profile-update-form"
-      >
+      <div class="mt-3">
         {% csrf_token %}
         <ol class="activity-checkout mb-0 px-4 mt-3">
           <li class="checkout-item">
@@ -33,7 +28,8 @@
               </div>
             </div>
             <div class="feed-item-list">
-              <div>
+              <form action="{% url 'profile' %}" method="POST">
+                {% csrf_token %}
                 <h5 class="font-size-16 mb-1">User Info</h5>
                 <p class="text-muted text-truncate mb-4">
                   Sed ut perspiciatis unde omnis iste
@@ -42,52 +38,70 @@
                   <div>
                     <div class="row">
                       <div class="col-lg-4">
-                        <div class="mb-3">{{ user.get_full_name }}</div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">{{ user.email }}</div>
+                        <div class="mb-3">
+                          {{ user_form.first_name | as_crispy_field }}
+                        </div>
                       </div>
                       <div class="col-lg-4">
                         <div class="mb-3">
-                          {{ form.default_phone_number | as_crispy_field }}
+                          {{ user_form.last_name | as_crispy_field }}
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="mb-3">
+                          {{ user_form.username | as_crispy_field }}
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+                <button class="my-4 btn btn-primary float-right" name='user_form'>
+                  Update Information
+                </button>
+              </form>
             </div>
           </li>
-          <li class="checkout-item">
-            <div class="avatar checkout-icon p-1">
-              <div class="avatar-title rounded-circle bg-primary">
-                <i class="fa-solid fa-truck text-white"></i>
+
+          <form
+            class="mt-3"
+            action="{% url 'profile' %}"
+            method="POST"
+            id="profile-update-form"
+          >
+            {% csrf_token %}
+            <li class="checkout-item">
+              <div class="avatar checkout-icon p-1">
+                <div class="avatar-title rounded-circle bg-primary">
+                  <i class="fa-solid fa-truck text-white"></i>
+                </div>
               </div>
-            </div>
-            <h5 class="font-size-16 mb-1">Delivery Info</h5>
-            <p class="text-muted text-truncate mb-4">
-              Sed ut perspiciatis unde omnis iste
-            </p>
-            <div class="feed-item-list mb-3">
-              {{ form.default_street_address1 | as_crispy_field }}
-              <!--  -->
-              {{ form.default_street_address2 | as_crispy_field }}
-              <!--  -->
-              {{ form.default_town_or_city | as_crispy_field }}
-              <!--  -->
-              {{form.default_county | as_crispy_field }}
-              <!--  -->
-              {{ form.default_postcode| as_crispy_field }}
-              <!--  -->
-              {{ form.default_country | as_crispy_field }}
-            </div>
-          </li>
+              <h5 class="font-size-16 mb-1">Delivery Info</h5>
+              <p class="text-muted text-truncate mb-4">
+                Sed ut perspiciatis unde omnis iste
+              </p>
+              <div class="feed-item-list mb-3">
+                {{ profile_form.default_phone_number | as_crispy_field }}
+                <!--  -->
+                {{ profile_form.default_street_address1 | as_crispy_field }}
+                <!--  -->
+                {{ profile_form.default_street_address2 | as_crispy_field }}
+                <!--  -->
+                {{ profile_form.default_town_or_city | as_crispy_field }}
+                <!--  -->
+                {{profile_form.default_county | as_crispy_field }}
+                <!--  -->
+                {{ profile_form.default_postcode| as_crispy_field }}
+                <!--  -->
+                {{ profile_form.default_country | as_crispy_field }}
+              </div>
+            </li>
+            <button class="my-4 btn btn-primary float-right">
+              Update Delivery
+            </button>
+          </form>
         </ol>
         <!--  -->
-        <button class="my-4 btn btn-primary float-right">
-          Update Information
-        </button>
-      </form>
+      </div>
     </div>
     <div class="col-12 col-lg-6">
       <p><strong>Order History</strong></p>
