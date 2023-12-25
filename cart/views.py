@@ -38,6 +38,27 @@ def add_to_cart(request, item_id):
     request.session['cart'] = cart
     return redirect(redirect_url)
 
+def update_cart(request, item_id):
+    """Adjust the quantity of the specified product to the specified amount"""
+
+    product = get_object_or_404(Product, pk=item_id)
+    quantity = int(request.POST.get('quantity'))
+    redirect_url = request.POST.get('redirect_url')
+
+    cart = request.session.get('cart', {})
+
+    if quantity > 0:
+        cart[item_id] = quantity
+        messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
+    else:
+        cart.pop(item_id)
+        messages.success(request, f'Removed {product.name} from your cart')
+
+    request.session['cart'] = cart
+    return redirect(redirect_url)
+
+
+
 
 def remove_from_cart(request, item_id):
     """Remove the item from the shopping cart"""

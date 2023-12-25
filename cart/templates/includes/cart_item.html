@@ -21,8 +21,15 @@
   <td data-th="Price">{{item.product.price}}</td>
   <td data-th="Quantity">
     {% if item.product.id < 26 %}
+    <form
+    class="form"
+    action="{% url 'update_cart' item.product.id %}"
+    method="POST"
+  >
+    {% csrf_token %}
     <input
       type="number"
+      name='quantity'
       class="form-control form-control-lg text-center"
       value="{{item.quantity}}"
     />
@@ -34,9 +41,13 @@
 
     <div class="d-flex my-1 justify-content-around">
       {% if item.product.id < 26 %}
+
       <button class="btn btn-light btn-sm mb-2 border-secondary">
         <i class="fa-solid fa-pen text-primary"></i>
       </button>
+      <input type="hidden" name="redirect_url" value="{{ request.path }}" />
+    </form>
+
       {% endif %}
       <form
         class="form"
