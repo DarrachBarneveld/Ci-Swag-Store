@@ -26,7 +26,7 @@
       "category": 1,
       "rating": 3.8,
       "image_url": "http://example.com/baseball_cap.jpg",
-      "image": "baseball_cap.jpg"
+      "image": "cap.jpg"
     }
   },
   {
@@ -41,7 +41,7 @@
       "sale": 0,
       "rating": 4.5,
       "image_url": "http://example.com/graphic_tshirt.jpg",
-      "image": "graphic_tshirt.jpg"
+      "image": "t_shirt.jpg"
     }
   },
   {
@@ -56,7 +56,7 @@
       "sale": 20,
       "rating": 4.0,
       "image_url": "http://example.com/knit_jumper.jpg",
-      "image": "knit_jumper.jpg"
+      "image": "jumper.jpg"
     }
   },
   {
@@ -71,7 +71,7 @@
       "category": 1,
       "rating": 4.8,
       "image_url": "http://example.com/denim_jacket.jpg",
-      "image": "denim_jacket.jpg"
+      "image": "jacket.jpg"
     }
   },
   {
@@ -86,7 +86,7 @@
       "sale": 0,
       "rating": 3.4,
       "image_url": "http://example.com/everyday_socks.jpg",
-      "image": "everyday_socks.jpg"
+      "image": "socks.jpg"
     }
   },
   {
@@ -101,7 +101,7 @@
       "sale": 0,
       "rating": 4.2,
       "image_url": "http://example.com/pajama_set.jpg",
-      "image": "pajama_set.jpg"
+      "image": "pajamas.jpg"
     }
   },
   {
@@ -116,7 +116,7 @@
       "category": 1,
       "rating": 2.4,
       "image_url": "http://example.com/button_up_shirt.jpg",
-      "image": "button_up_shirt.jpg"
+      "image": "shirt.jpg"
     }
   },
   {
@@ -131,7 +131,7 @@
       "category": 1,
       "rating": 3.9,
       "image_url": "http://example.com/sporty_tracksuit.jpg",
-      "image": "sporty_tracksuit.jpg"
+      "image": "tracksuit.jpg"
     }
   },
   {
@@ -146,7 +146,7 @@
       "category": 1,
       "rating": 4.2,
       "image_url": "http://example.com/silk_tie.jpg",
-      "image": "silk_tie.jpg"
+      "image": "tie.jpg"
     }
   },
   {
@@ -297,7 +297,7 @@
       "category": 3,
       "rating": 4.1,
       "image_url": "http://example.com/stainless_steel_thermos.jpg",
-      "image": "stainless_steel_thermos.jpg"
+      "image": "thermos.jpg"
     }
   },
   {
@@ -357,7 +357,7 @@
       "category": 3,
       "rating": 3.9,
       "image_url": "http://example.com/neck_pillow.jpg",
-      "image": "neck_pillow.jpg"
+      "image": "pillow.jpg"
     }
   },
   {
