@@ -374,5 +374,80 @@
       "image_url": "http://example.com/ceramic_mug.jpg",
       "image": "mug.jpg"
     }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380711",
+      "name": "Warm Winter Slippers",
+      "description": "Experience ultimate comfort and warmth with our cozy winter slippers. Perfect for chilly days, these slippers keep your feet toasty and stylish.",
+      "price": 24.99,
+      "sale": 20,
+      "category": 1,
+      "rating": 3.2,
+      "image_url": "http://example.com/winter_slippers.jpg",
+      "image": "slippers.jpg"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380712",
+      "name": "Adjustable Laptop Stand",
+      "description": "Enhance your work setup with our adjustable laptop stand. Designed for comfort and productivity, it provides an ergonomic solution for your workspace.",
+      "price": 34.99,
+      "sale": 0,
+      "category": 2,
+      "rating": 4,
+      "image_url": "http://example.com/laptop_stand.jpg",
+      "image": "laptop.jpg"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380713",
+      "name": "Hackathon Medal Set",
+      "description": "Celebrate your coding achievements with our exclusive hackathon medal set. Showcase your skills and accomplishments in style.",
+      "price": 199.99,
+      "sale": 10,
+      "category": 3,
+      "rating": 4.9,
+      "image_url": "http://example.com/hackathon_medals.jpg",
+      "image": "medals.jpg"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380714",
+      "name": "Noise-Canceling Headphones",
+      "description": "Immerse yourself in a world of focused productivity with our noise-canceling headphones. Block out distractions and enhance your audio experience.",
+      "price": 79.99,
+      "sale": 50,
+      "category": 2,
+      "rating": 3.3,
+      "image_url": "http://example.com/headphones.jpg",
+      "image": "headphones.jpg"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5006380715",
+      "name": "CI Mascot Bear",
+      "description": "Embrace the coding spirit with our CI mascot bear, your loyal companion in the world of programming. A cute and inspiring addition to your workspace.",
+      "price": 19.99,
+      "sale": 0,
+      "category": 3,
+      "rating": 5,
+      "image_url": "http://example.com/ci_mascot_bear.jpg",
+      "image": "mascot.jpg"
+    }
   }
 ]

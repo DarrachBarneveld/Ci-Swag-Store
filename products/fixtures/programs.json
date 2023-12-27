@@ -1,90 +1,5 @@
 [
   {
-    "pk": 26,
-    "model": "programs.program",
-    "fields": {
-      "category": 4,
-      "sku": "cc5482X9L0A",
-      "name": "JavaScript Array Methods Mastery",
-      "description": "Master the powerful array methods in JavaScript with this hands-on course. Boost your coding skills!",
-      "price": 29.99,
-      "sale": 0,
-      "rating": 4.5,
-      "difficulty": 1,
-      "length": "0:60:00",
-      "image_url": "http://example.com/js_array_methods.jpg",
-      "image": "js_array_methods.jpg"
-    }
-  },
-  {
-    "pk": 27,
-    "model": "programs.program",
-    "fields": {
-      "category": 4,
-      "sku": "cc72B4xP8cD",
-      "name": "Python List Comprehension Unleashed",
-      "description": "Unlock the full potential of Python with advanced list comprehension techniques. Take your Python skills to the next level!",
-      "price": 19.99,
-      "sale": 0,
-      "rating": 4.8,
-      "difficulty": 2,
-      "length": "0:45:00",
-      "image_url": "http://example.com/python_list_comprehension.jpg",
-      "image": "python_list_comprehension.jpg"
-    }
-  },
-  {
-    "pk": 28,
-    "model": "programs.program",
-    "fields": {
-      "category": 4,
-      "sku": "cc3aV1wR6zF",
-      "name": "Node.js Backend Development Masterclass",
-      "description": "Dive deep into Node.js backend development with our comprehensive masterclass. Build scalable and efficient backend solutions!",
-      "price": 64.99,
-      "sale": 10,
-      "rating": 4.6,
-      "difficulty": 2,
-      "length": "4:00:00",
-      "image_url": "http://example.com/nodejs_backend.jpg",
-      "image": "nodejs_backend.jpg"
-    }
-  },
-  {
-    "pk": 29,
-    "model": "programs.program",
-    "fields": {
-      "category": 4,
-      "sku": "cc6Kl0eQ7T2",
-      "name": "JavaScript Bundlers Demystified",
-      "description": "Demystify the world of JavaScript bundlers and streamline your development workflow. Enhance your project setup!",
-      "price": 49.99,
-      "sale": 0,
-      "rating": 4.3,
-      "difficulty": 3,
-      "length": "3:10:00",
-      "image_url": "http://example.com/js_bundlers.jpg",
-      "image": "js_bundlers.jpg"
-    }
-  },
-  {
-    "pk": 30,
-    "model": "programs.program",
-    "fields": {
-      "category": 5,
-      "sku": "cc5Gh9sJ2rP",
-      "name": "Mastering Flexbox and Grid Layouts",
-      "description": "Unlock the power of Flexbox and Grid Layouts in CSS. Learn to create responsive and dynamic web layouts effortlessly!",
-      "price": 29.99,
-      "sale": 0,
-      "rating": 4.7,
-      "difficulty": 1,
-      "length": "1:35:00",
-      "image_url": "http://example.com/flexbox_grid.jpg",
-      "image": "flexbox_grid.jpg"
-    }
-  },
-  {
     "pk": 31,
     "model": "programs.program",
     "fields": {
@@ -371,6 +286,91 @@
       "length": "2:05:00",
       "image_url": "http://example.com/apple_dev_package.jpg",
       "image": "apple_dev_package.jpg"
+    }
+  },
+  {
+    "pk": 47,
+    "model": "programs.program",
+    "fields": {
+      "category": 4,
+      "sku": "cc5482X9L0A",
+      "name": "JavaScript Array Methods Mastery",
+      "description": "Master the powerful array methods in JavaScript with this hands-on course. Boost your coding skills!",
+      "price": 29.99,
+      "sale": 0,
+      "rating": 4.5,
+      "difficulty": 1,
+      "length": "0:60:00",
+      "image_url": "http://example.com/js_array_methods.jpg",
+      "image": "js_array_methods.jpg"
+    }
+  },
+  {
+    "pk": 48,
+    "model": "programs.program",
+    "fields": {
+      "category": 4,
+      "sku": "cc72B4xP8cD",
+      "name": "Python List Comprehension Unleashed",
+      "description": "Unlock the full potential of Python with advanced list comprehension techniques. Take your Python skills to the next level!",
+      "price": 19.99,
+      "sale": 0,
+      "rating": 4.8,
+      "difficulty": 2,
+      "length": "0:45:00",
+      "image_url": "http://example.com/python_list_comprehension.jpg",
+      "image": "python_list_comprehension.jpg"
+    }
+  },
+  {
+    "pk": 49,
+    "model": "programs.program",
+    "fields": {
+      "category": 4,
+      "sku": "cc3aV1wR6zF",
+      "name": "Node.js Backend Development Masterclass",
+      "description": "Dive deep into Node.js backend development with our comprehensive masterclass. Build scalable and efficient backend solutions!",
+      "price": 64.99,
+      "sale": 10,
+      "rating": 4.6,
+      "difficulty": 2,
+      "length": "4:00:00",
+      "image_url": "http://example.com/nodejs_backend.jpg",
+      "image": "nodejs_backend.jpg"
+    }
+  },
+  {
+    "pk": 50,
+    "model": "programs.program",
+    "fields": {
+      "category": 4,
+      "sku": "cc6Kl0eQ7T2",
+      "name": "JavaScript Bundlers Demystified",
+      "description": "Demystify the world of JavaScript bundlers and streamline your development workflow. Enhance your project setup!",
+      "price": 49.99,
+      "sale": 0,
+      "rating": 4.3,
+      "difficulty": 3,
+      "length": "3:10:00",
+      "image_url": "http://example.com/js_bundlers.jpg",
+      "image": "js_bundlers.jpg"
+    }
+  },
+  {
+    "pk": 51,
+    "model": "programs.program",
+    "fields": {
+      "category": 5,
+      "sku": "cc5Gh9sJ2rP",
+      "name": "Mastering Flexbox and Grid Layouts",
+      "description": "Unlock the power of Flexbox and Grid Layouts in CSS. Learn to create responsive and dynamic web layouts effortlessly!",
+      "price": 29.99,
+      "sale": 0,
+      "rating": 4.7,
+      "difficulty": 1,
+      "length": "1:35:00",
+      "image_url": "http://example.com/flexbox_grid.jpg",
+      "image": "flexbox_grid.jpg"
     }
   }
 ]

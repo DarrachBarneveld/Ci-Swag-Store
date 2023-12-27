@@ -3,7 +3,7 @@
     "pk": 1,
     "model": "programs.module",
     "fields": {
-      "program": 26,
+      "program": 47,
       "title": "Introduction to Arrays",
       "description": "Get started with the basics of JavaScript arrays."
     }
@@ -12,7 +12,7 @@
     "pk": 2,
     "model": "programs.module",
     "fields": {
-      "program": 26,
+      "program": 47,
       "title": "Advanced Array Manipulation",
       "description": "Learn advanced techniques for manipulating arrays in JavaScript."
     }
@@ -21,7 +21,7 @@
     "pk": 3,
     "model": "programs.module",
     "fields": {
-      "program": 26,
+      "program": 47,
       "title": "Hands-on Array Exercises",
       "description": "Apply your knowledge through hands-on exercises and challenges."
     }
@@ -30,7 +30,7 @@
     "pk": 4,
     "model": "programs.module",
     "fields": {
-      "program": 27,
+      "program": 48,
       "title": "Understanding List Comprehension",
       "description": "Get a solid understanding of list comprehension and its syntax in Python."
     }
@@ -39,7 +39,7 @@
     "pk": 5,
     "model": "programs.module",
     "fields": {
-      "program": 27,
+      "program": 48,
       "title": "Advanced List Comprehension Techniques",
       "description": "Explore advanced techniques and patterns for using list comprehension effectively in Python."
     }
@@ -48,7 +48,7 @@
     "pk": 6,
     "model": "programs.module",
     "fields": {
-      "program": 28,
+      "program": 49,
       "title": "Introduction to Node.js",
       "description": "Get started with Node.js and understand its role in backend development."
     }
@@ -57,7 +57,7 @@
     "pk": 7,
     "model": "programs.module",
     "fields": {
-      "program": 28,
+      "program": 49,
       "title": "Building RESTful APIs with Express",
       "description": "Learn how to build RESTful APIs using the Express framework in Node.js."
     }
@@ -66,7 +66,7 @@
     "pk": 8,
     "model": "programs.module",
     "fields": {
-      "program": 28,
+      "program": 49,
       "title": "Database Integration with MongoDB",
       "description": "Explore the integration of MongoDB as a database in Node.js applications."
     }
@@ -75,7 +75,7 @@
     "pk": 9,
     "model": "programs.module",
     "fields": {
-      "program": 28,
+      "program": 49,
       "title": "Authentication and Authorization",
       "description": "Understand the concepts of authentication and authorization in Node.js."
     }
@@ -84,7 +84,7 @@
     "pk": 10,
     "model": "programs.module",
     "fields": {
-      "program": 28,
+      "program": 49,
       "title": "Advanced Topics in Node.js",
       "description": "Delve into advanced topics and best practices in Node.js backend development."
     }
@@ -93,7 +93,7 @@
     "pk": 11,
     "model": "programs.module",
     "fields": {
-      "program": 29,
+      "program": 50,
       "title": "Introduction to JavaScript Bundlers",
       "description": "Get an overview of JavaScript bundlers and their role in modern web development."
     }
@@ -102,7 +102,7 @@
     "pk": 12,
     "model": "programs.module",
     "fields": {
-      "program": 29,
+      "program": 50,
       "title": "Webpack Fundamentals",
       "description": "Dive into the fundamentals of Webpack, a popular JavaScript bundler."
     }
@@ -111,7 +111,7 @@
     "pk": 13,
     "model": "programs.module",
     "fields": {
-      "program": 29,
+      "program": 50,
       "title": "ParcelJS Deep Dive",
       "description": "Explore the features and usage of ParcelJS as an alternative JavaScript bundler."
     }
@@ -120,7 +120,7 @@
     "pk": 14,
     "model": "programs.module",
     "fields": {
-      "program": 29,
+      "program": 50,
       "title": "Optimizing Project Setup",
       "description": "Learn techniques for optimizing your project setup and workflow using JavaScript bundlers."
     }
@@ -129,7 +129,7 @@
     "pk": 15,
     "model": "programs.module",
     "fields": {
-      "program": 30,
+      "program": 51,
       "title": "Introduction to Flexbox",
       "description": "Get started with the basics of Flexbox and understand its role in creating flexible layouts."
     }
@@ -138,7 +138,7 @@
     "pk": 16,
     "model": "programs.module",
     "fields": {
-      "program": 30,
+      "program": 51,
       "title": "Exploring Grid Layouts",
       "description": "Dive into the world of CSS Grid Layout and learn how to structure complex web layouts."
     }
@@ -147,7 +147,7 @@
     "pk": 17,
     "model": "programs.module",
     "fields": {
-      "program": 30,
+      "program": 51,
       "title": "Responsive Design Techniques",
       "description": "Master responsive design techniques using Flexbox and Grid Layouts for various screen sizes."
     }
