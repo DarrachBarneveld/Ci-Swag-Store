@@ -1,5 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render,reverse, redirect, get_object_or_404
+from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.db.models import Q
+
 
 from products.models import Category
 from .models import Program
@@ -19,8 +22,18 @@ def all_programs(request):
             programs = programs.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
+    if 'q' in request.GET:
+        query = request.GET['q']
+        if not query:
+                messages.error(request, "You didn't enter any search criteria!")
+                return redirect(reverse('programs'))
+
+        queries = Q(name__icontains=query) | Q(description__icontains=query)
+        programs = programs.filter(queries)
+
     context = {
         'programs': programs,
+        'search_term': query,
         'current_categories': categories
     }
 
