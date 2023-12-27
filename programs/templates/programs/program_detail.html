@@ -218,7 +218,9 @@
           </div>
           <!-- Product actions-->
           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-            <div class="text-center"></div>
+            <div class="text-center">
+   <a class="btn btn-primary mt-auto" href="{% url "program_detail" related.id %}">Learn More</a> 
+            </div>
           </div>
         </div>
       </div>
@@ -229,4 +231,3 @@
 
 {% endblock %}
 
-<!--   <a class="btn btn-primary mt-auto" href="{% url "program_detail" related.id %}">Learn More</a> -->
