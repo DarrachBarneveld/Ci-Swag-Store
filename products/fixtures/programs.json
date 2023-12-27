@@ -13,7 +13,7 @@
       "difficulty": 1,
       "length": "2:15:00",
       "image_url": "http://example.com/semantic_accessibility.jpg",
-      "image": "semantic_accessibility.jpg"
+      "image": "semantic.jpg"
     }
   },
   {
@@ -30,7 +30,7 @@
       "difficulty": 1,
       "length": "1:20:00",
       "image_url": "http://example.com/design_principles.jpg",
-      "image": "design_principles.jpg"
+      "image": "ux.jpg"
     }
   },
   {
@@ -47,7 +47,7 @@
       "difficulty": 2,
       "length": "2:40:00",
       "image_url": "http://example.com/devops_fundamentals.jpg",
-      "image": "devops_fundamentals.jpg"
+      "image": "devops.png"
     }
   },
   {
@@ -64,7 +64,7 @@
       "difficulty": 3,
       "length": "4:40:00",
       "image_url": "http://example.com/cloud_computing.jpg",
-      "image": "cloud_computing.jpg"
+      "image": "cloud.png"
     }
   },
   {
@@ -81,7 +81,7 @@
       "difficulty": 2,
       "length": "0:45:00",
       "image_url": "http://example.com/continuous_delivery.jpg",
-      "image": "continuous_delivery.jpg"
+      "image": "delivery.jpg"
     }
   },
   {
@@ -98,7 +98,7 @@
       "difficulty": 3,
       "length": "1:15:00",
       "image_url": "http://example.com/machine_learning.jpg",
-      "image": "machine_learning.jpg"
+      "image": "machine_learning.png"
     }
   },
   {
@@ -115,7 +115,7 @@
       "difficulty": 1,
       "length": "1:55:00",
       "image_url": "http://example.com/data_visualization.jpg",
-      "image": "data_visualization.jpg"
+      "image": "data_visualization.png"
     }
   },
   {
@@ -149,7 +149,7 @@
       "difficulty": 1,
       "length": "1:50:00",
       "image_url": "http://example.com/r_programming.jpg",
-      "image": "r_programming.jpg"
+      "image": "r_programming.webp"
     }
   },
   {
@@ -166,7 +166,7 @@
       "difficulty": 3,
       "length": "7:10:00",
       "image_url": "http://example.com/javascript_libraries.jpg",
-      "image": "javascript_libraries.jpg"
+      "image": "js_libraries.png"
     }
   },
   {
@@ -183,7 +183,7 @@
       "difficulty": 2,
       "length": "2:30:00",
       "image_url": "http://example.com/game_dev_libraries.jpg",
-      "image": "game_dev_libraries.jpg"
+      "image": "kaboom.png"
     }
   },
   {
@@ -200,7 +200,7 @@
       "difficulty": 2,
       "length": "4:20:00",
       "image_url": "http://example.com/unity_game_engine.jpg",
-      "image": "unity_game_engine.jpg"
+      "image": "unity.jpg"
     }
   },
   {
@@ -217,7 +217,7 @@
       "difficulty": 2,
       "length": "2:35:00",
       "image_url": "http://example.com/blender_3d_modeling.jpg",
-      "image": "blender_3d_modeling.jpg"
+      "image": "blender.png"
     }
   },
   {
@@ -234,7 +234,7 @@
       "difficulty": 1,
       "length": "2:00:00",
       "image_url": "http://example.com/react_native_basics.jpg",
-      "image": "react_native_basics.jpg"
+      "image": "react_native.png"
     }
   },
   {
@@ -251,7 +251,7 @@
       "difficulty": 2,
       "length": "2:25:00",
       "image_url": "http://example.com/flutter_google_apps.jpg",
-      "image": "flutter_google_apps.jpg"
+      "image": "flutter.jpg"
     }
   },
   {
@@ -268,7 +268,7 @@
       "difficulty": 2,
       "length": "1:15:00",
       "image_url": "http://example.com/ios_app_dev_essentials.jpg",
-      "image": "ios_app_dev_essentials.jpg"
+      "image": "ios_dev.webp"
     }
   },
   {
@@ -285,7 +285,7 @@
       "difficulty": 1,
       "length": "2:05:00",
       "image_url": "http://example.com/apple_dev_package.jpg",
-      "image": "apple_dev_package.jpg"
+      "image": "apple.png"
     }
   },
   {
@@ -302,7 +302,7 @@
       "difficulty": 1,
       "length": "0:60:00",
       "image_url": "http://example.com/js_array_methods.jpg",
-      "image": "js_array_methods.jpg"
+      "image": "js_methods.jpg"
     }
   },
   {
@@ -319,7 +319,7 @@
       "difficulty": 2,
       "length": "0:45:00",
       "image_url": "http://example.com/python_list_comprehension.jpg",
-      "image": "python_list_comprehension.jpg"
+      "image": "python_list.png"
     }
   },
   {
@@ -336,7 +336,7 @@
       "difficulty": 2,
       "length": "4:00:00",
       "image_url": "http://example.com/nodejs_backend.jpg",
-      "image": "nodejs_backend.jpg"
+      "image": "nodejs.jpg"
     }
   },
   {
@@ -353,7 +353,7 @@
       "difficulty": 3,
       "length": "3:10:00",
       "image_url": "http://example.com/js_bundlers.jpg",
-      "image": "js_bundlers.jpg"
+      "image": "bundlers.jpg"
     }
   },
   {
@@ -370,7 +370,7 @@
       "difficulty": 1,
       "length": "1:35:00",
       "image_url": "http://example.com/flexbox_grid.jpg",
-      "image": "flexbox_grid.jpg"
+      "image": "flex.png"
     }
   }
 ]

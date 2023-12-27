@@ -23,7 +23,7 @@
             <div class="col-md-6">
               <img
                 class="card-img-top mb-5 mb-md-0"
-                src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg"
+                src="{{ product.image.url }}"
                 alt="..."
               />
             </div>
@@ -75,7 +75,7 @@
               </div>
               {% endif %}
               <!-- Product image-->
-              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="...">
+              <img class="card-img-top" src="{{ related.image.url }}" alt="{{ related.name }}">
               <!-- Product details-->
               <div class="card-body p-4">
                 <div class="text-center">
@@ -90,9 +90,9 @@
                   <!-- Product price-->
                   {% if related.sale %}
                   <span class="text-decoration-line-through">${{related.price}}</span>
-                  <span>${{related.total_final_price}}</span>
+                  <span><strong>${{related.total_final_price}}</strong></span>
                   {% else %}
-                  <span>${{related.price}}</span>
+                  <span><strong>${{related.price}}</strong></span>
                   {% endif %}
                 </div>
               </div>
