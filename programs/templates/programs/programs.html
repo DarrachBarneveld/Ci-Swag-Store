@@ -22,11 +22,40 @@
 {% block content %}
     <!-- Section-->
     <section class="py-3 bg-white">
-      <form method='GET' action='{% url "programs" %}' class='search-container mx-auto d-flex justify-content-center'>
-      <div class="search"> <input type="text" class="search-input" placeholder="Search programs" name="q"> <button type='submit' class="search-icon btn-primary"> <i class="fa fa-search"></i> </a>
-      </form>
-      </div>
-        <div class="container px-4 px-lg-5 mt-5">
+      <form method='GET' action='{% url "programs" %}' class='mx-auto d-flex justify-content-center align-items-center search-container'>
+      <div class="search"> <input type="text" class="search-input" placeholder="Search programs" name="q"> <button type='submit' class="search-icon btn-primary border-0"> <i class="fa fa-search"></i> </a></div>
+
+
+        <button type="submit" class='btn btn-outline-dark d-flex align-items-center' name="sort" value="price">
+          <i class="fa-solid fa-money-bill text-success"></i>
+          {% if sort == 'price' %}
+              {% if direction == 'asc' %}
+                  <i class="fa-solid fa-sort-down ms-2"></i>
+                  <input type="hidden" name="direction" value="desc">
+              {% else %}
+                  <i class="fa-solid fa-sort-up ms-2"></i>
+                  <input type="hidden" name="direction" value="asc">
+              {% endif %}
+          {% endif %}
+      </button>
+
+      <button type="submit" class='btn btn-outline-dark d-flex align-items-center' name="sort" value="rating">
+        <i class="fa-solid fa-star text-warning"></i>
+        {% if sort == 'rating' %}
+            {% if direction == 'asc' %}
+                <i class="fa-solid fa-sort-down ms-2"></i>
+                <input type="hidden" name="direction" value="desc">
+            {% else %}
+                <i class="fa-solid fa-sort-up ms-2"></i>
+                <input type="hidden" name="direction" value="asc">
+            {% endif %}
+        {% else %}
+        {% endif %}
+      </button>
+  </form>
+
+     
+      <div class="container px-4 px-lg-5 mt-5">
           <div
             class="row gx-2 gy-2 row-cols-lg-2 justify-content-center"
           >

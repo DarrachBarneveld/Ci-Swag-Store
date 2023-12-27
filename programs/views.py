@@ -2,7 +2,7 @@ from django.shortcuts import render,reverse, redirect, get_object_or_404
 from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
-
+from django.db.models.functions import Lower
 
 from products.models import Category
 from .models import Program
@@ -16,6 +16,8 @@ def all_programs(request):
     programs = Program.objects.all()
     query = None
     categories = None
+    sort = None
+    direction = 'asc'
 
     if 'category' in request.GET:
             categories = request.GET['category'].split(',')
@@ -25,16 +27,26 @@ def all_programs(request):
     if 'q' in request.GET:
         query = request.GET['q']
         if not query:
-                messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('programs'))
-
+            query = ''
         queries = Q(name__icontains=query) | Q(description__icontains=query)
         programs = programs.filter(queries)
+
+    if 'sort' in request.GET:
+        sortkey = request.GET['sort']
+        sort = sortkey
+        print(sort)
+        if 'direction' in request.GET:
+            direction = request.GET['direction']
+            if direction == 'desc':
+                sortkey = f'-{sortkey}'
+        programs = programs.order_by(sortkey)
 
     context = {
         'programs': programs,
         'search_term': query,
-        'current_categories': categories
+        'current_categories': categories,
+        'sort': sort,
+        'direction': direction,
     }
 
     return render(request, 'programs/programs.html', context)
