@@ -24,7 +24,7 @@
     <section class="py-3 bg-white">
 
       <form method='GET' action='{% url "products" %}' class='mx-auto d-flex justify-content-center align-items-center search-container'>
-        <div class="search"> <input type="text" class="search-input" placeholder="Search products" name="q"> <button type='submit' class="search-icon btn-primary border-0"> <i class="fa fa-search"></i> </a></div>
+        <div class="search"> <input type="text" class="search-input" placeholder="Search products" name="q" value={% if query %}{{query}}{% endif %}> <button type='submit' class="search-icon btn-primary border-0"> <i class="fa fa-search"></i> </a></div>
           <button type="submit" class='btn btn-outline-dark d-flex align-items-center' name="sort" value="price">
             <i class="fa-solid fa-money-bill text-success"></i>
             {% if sort == 'price' %}

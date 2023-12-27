@@ -45,6 +45,7 @@ def all_products(request):
         'category': f"{category} products",
         'sort': sort,
         'direction': direction,
+        'query': query
     }
 
     return render(request, 'products/products.html', context)

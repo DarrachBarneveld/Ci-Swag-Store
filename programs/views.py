@@ -46,6 +46,7 @@ def all_programs(request):
         'current_categories': categories,
         'sort': sort,
         'direction': direction,
+        'query': query
     }
 
     return render(request, 'programs/programs.html', context)
