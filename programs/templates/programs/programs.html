@@ -22,7 +22,7 @@
 {% block content %}
     <!-- Section-->
     <section class="py-3 bg-white">
-      <form method='GET' action='{% url "programs" %}' class='mx-auto d-flex justify-content-center align-items-center search-container'>
+      <form method='GET' action='{% url "programs" %}' class='mx-auto d-flex justify-content-center search-container'>
       <div class="search"> <input type="text" class="search-input" placeholder="Search programs" name="q" value={% if query %}{{query}}{% endif %}> <button type='submit' class="search-icon btn-primary border-0"> <i class="fa fa-search"></i> </a></div>
 
 

@@ -21,6 +21,7 @@ iframe {
 
 .search-container button {
   border: 1px solid rgba(0, 0, 0, 0.2);
+  flex: 1;
 }
 
 .search {
