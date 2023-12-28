@@ -11,7 +11,7 @@
       <div class="text-center text-white">
         <h1 class="display-4 fw-bolder">Expand your knowledge</h1>
         <p class="lead fw-normal text-white-50 mb-0">
-            Elevate your expertise with our curated courses.
+            Elevate your expertise with our {% if current_categories %}<em class='text-info'> {{current_categories.friendly_name}} </em>{% endif %}courses.
         </p>
       </div>
     </div>
@@ -52,6 +52,10 @@
         {% else %}
         {% endif %}
       </button>
+      {% if category %}
+      {{ category }}
+      <input type="hidden" name="category" value="{{ category }}">
+      {% endif %}
   </form>
 
      

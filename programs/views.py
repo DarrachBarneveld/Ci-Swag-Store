@@ -16,13 +16,15 @@ def all_programs(request):
     programs = Program.objects.all()
     query = None
     categories = None
+    category = None
     sort = None
     direction = 'asc'
 
     if 'category' in request.GET:
             categories = request.GET['category'].split(',')
+            category = categories[0]
             programs = programs.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+            categories = Category.objects.filter(name__in=categories).first()
 
     if 'q' in request.GET:
         query = request.GET['q']
@@ -40,13 +42,15 @@ def all_programs(request):
                 sortkey = f'-{sortkey}'
         programs = programs.order_by(sortkey)
 
+
     context = {
         'programs': programs,
         'search_term': query,
         'current_categories': categories,
         'sort': sort,
         'direction': direction,
-        'query': query
+        'query': query,
+        'category': category
     }
 
     return render(request, 'programs/programs.html', context)
