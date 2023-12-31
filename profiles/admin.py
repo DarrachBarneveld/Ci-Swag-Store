@@ -1,21 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.models import User
 from .models import UserProfile
-from checkout.models import Order
-
-class OrderInline(admin.TabularInline):  
-    model = Order
-    fields = (
-        'order_number',
-        'full_name',
-        'email',
-        'phone_number',
-        'town_or_city',
-        'order_total',
-        'grand_total',
-        'date',
-    )
-    readonly_fields = ('order_number', 'date', 'full_name', 'email', 'phone_number', 'town_or_city', 'order_total', 'grand_total')
 
 
 # Register your models here.
@@ -26,9 +11,6 @@ class ProfileInline(admin.StackedInline):
     """
 
     model = UserProfile
-    inlines = [OrderInline]  
-
-
 
 class UserAdmin(admin.ModelAdmin):
     """
@@ -50,11 +32,7 @@ class UserAdmin(admin.ModelAdmin):
     fields = ("username", "first_name", "last_name", "email")
     inlines = [ProfileInline]
 
-class ProfileAdmin(admin.ModelAdmin):
-    model = UserProfile
-    inlines = [OrderInline]
 
 
 admin.site.unregister(User)
 admin.site.register(User, UserAdmin)
-admin.site.register(UserProfile, ProfileAdmin)
