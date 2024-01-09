@@ -12,6 +12,7 @@ class ProfileInline(admin.StackedInline):
     """
 
     model = UserProfile
+    
 
 class OrderInline(admin.TabularInline):
     model = Order
