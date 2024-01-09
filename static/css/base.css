@@ -254,6 +254,10 @@ a {
   bottom: 15px;
 }
 
+.carousel .carousel-indicators:hover {
+  cursor: pointer;
+}
+
 .carousel-indicators li.active {
   background: var(--primary-orange);
 }
